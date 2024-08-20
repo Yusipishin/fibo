@@ -1,0 +1,7 @@
+.panel {
+    z-index: var(--popup-z-index);
+    border-radius: 8px;
+    position: absolute;
+    background: var(--bg-color);
+    padding: 15px;
+}

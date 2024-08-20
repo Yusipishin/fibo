@@ -1,0 +1,110 @@
+{
+    "notifications": [
+        {
+            "id": "1",
+            "title": "Уведомление 1",
+            "description": "Произошло какое-то событие",
+            "userId": "1"
+        },
+        {
+            "id": "2",
+            "title": "Уведомление 2",
+            "description": "Произошло какое-то событие",
+            "userId": "1",
+            "href": "http://localhost:3000/admin"
+        },
+        {
+            "id": "3",
+            "title": "Уведомление 3",
+            "description": "Произошло какое-то событие",
+            "userId": "1",
+            "href": "http://localhost:3000/admin"
+        },
+        {
+            "id": "4",
+            "title": "Уведомление 4",
+            "description": "Произошло какое-то событие",
+            "userId": "2"
+        },
+        {
+            "id": "5",
+            "title": "Уведомление 1",
+            "description": "Произошло какое-то событие",
+            "userId": "2"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": false,
+                "isCounterEnabled": false
+            },
+            "profile": {
+                "first": "Алексейa",
+                "lastname": "Юсипишинr",
+                "age": 19,
+                "country": "Russia",
+                "city": "Ухта",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_G3dnP1UUHCINfAEEv0m_LEqnZ9HEWcEFDQ&s"
+            }
+        },
+        {
+            "id": "2",
+            "username": "user",
+            "password": "123",
+            "roles": ["USER"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnabled": true
+            },
+            "profile": {
+                "first": "Алекс",
+                "lastname": "Юсипишин",
+                "age": 19,
+                "country": "Belarus",
+                "city": "Moscow",
+                "avatar": "https://i.pinimg.com/236x/a4/01/42/a401427af3f46fbf774e56ab0723bab9.jpg"
+            }
+        },
+        {
+            "id": "3",
+            "username": "manager",
+            "password": "123",
+            "roles": ["MANAGER"],
+            "features": {
+                "isArticleRatingEnabled": false,
+                "isCounterEnabled": true
+            },
+            "profile": {
+                "first": "Test",
+                "lastname": "User",
+                "age": 29,
+                "country": "Belarus",
+                "city": "Moscow",
+                "avatar": "https://cs13.pikabu.ru/post_img/big/2023/02/13/8/1676296366191520185.png"
+            }
+        },
+        {
+            "id": "4",
+            "username": "testuser",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnabled": false
+            },
+            "profile": {
+                "first": "Test",
+                "lastname": "User",
+                "age": 29,
+                "country": "Belarus",
+                "city": "Moscow",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgA_xdu7bbkn44ysPIKt7scHEXEqsiIMUWQ&s"
+            }
+        }
+    ]
+}

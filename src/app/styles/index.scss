@@ -1,0 +1,33 @@
+@import "reset";
+@import "fonts";
+@import "variables/global";
+@import "themes/light";
+@import "themes/dark";
+
+body {
+    font: var(--font-m);
+    scroll-behavior: smooth;
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--inverted-primary-color);
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+}
