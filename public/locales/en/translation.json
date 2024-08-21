@@ -1,7 +1,27 @@
 {
+    "Номер телефона сайта": "+447800767690",
     "Короткий язык": "EN",
     "Язык": "English",
     "Войти": "Log In",
     "Произошла непредвиденная ошибка": "An unexpected error occurred",
-    "Обновить страницу": "Refresh page"
+    "Обновить страницу": "Refresh page",
+    "Логотип сайта Fibo": "Fibo website logo",
+    "Доставка пасты": "Pasta delivery",
+    "Заказать звонок": "Request a call",
+    "Яндекс еда": "Yandex food",
+    "Москва": "Moscow",
+    "Время доставки": "Delivery time",
+    "от 31 мин": "from 31 min",
+    "Корзина": "Cart",
+    "Пицца": "Pizza",
+    "Паста": "Pasta",
+    "Супы": "Soups",
+    "Салаты": "Salads",
+    "Напитки": "Beverages",
+    "Десерты": "Desserts",
+    "Бакалея": "Grocery",
+    "Антипасти": "Antipasti",
+    "Акции": "Promotions",
+    "Комбо": "Combo",
+    "Контакты": "Contacts"
 }

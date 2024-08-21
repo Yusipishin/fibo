@@ -1,0 +1,17 @@
+.Header {
+    top: 0;
+    width: 100%;
+    position: sticky;
+    height: var(--header-height);
+    background: var(--inverted-bg-color);
+}
+
+.headerWrapper {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: var(--container-width);
+}
+
+.scrolled {
+    height: var(--header-scroll-height);
+}

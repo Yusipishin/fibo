@@ -14,6 +14,8 @@ export const Primary: Story = {
     decorators: [StoreDecorator({})],
 };
 
-export const Auth: Story = {
-    decorators: [StoreDecorator({ user: { authData: {} } })],
+export const Scrolled: Story = {
+    args: {
+        scrolled: true,
+    },
 };
