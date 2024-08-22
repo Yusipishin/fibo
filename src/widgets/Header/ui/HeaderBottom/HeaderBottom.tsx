@@ -42,7 +42,9 @@ export const HeaderBottom = memo(({ scrolled }: HeaderBottomProps) => {
             )}
             <HStack className={cls.navList} gap="16">
                 {Object.keys(navLinks).map((key) => (
-                    <AppLink to={navLinks[key]}>{t(key)}</AppLink>
+                    <AppLink key={key} to={navLinks[key]}>
+                        {t(key)}
+                    </AppLink>
                 ))}
             </HStack>
             <HStack gap="32">

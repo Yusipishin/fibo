@@ -1,9 +1,10 @@
 .Header {
     top: 0;
     width: 100%;
-    position: sticky;
-    height: var(--header-height);
+    height: var(--header-full-height);
     background: var(--inverted-bg-color);
+    transition: height 0.3s;
+    transform: translateY(50);
 }
 
 .headerWrapper {
@@ -12,6 +13,7 @@
     max-width: var(--container-width);
 }
 
-.scrolled {
-    height: var(--header-scroll-height);
+.collapsed {
+    position: sticky;
+    height: var(--header-collapsed-height);
 }

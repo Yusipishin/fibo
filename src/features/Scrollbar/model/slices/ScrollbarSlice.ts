@@ -6,7 +6,7 @@ const initialState: ScrollbarSchema = {
 };
 
 export const scrollbarSlice = createSlice({
-    name: 'ui',
+    name: 'scrollbar',
     initialState,
     reducers: {
         setScrollPosition: (

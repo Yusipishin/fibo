@@ -8,7 +8,7 @@ const MainPage = memo(() => {
     return (
         <Page data-testid="MainPage">
             {t('Главная страница')}
-            <div style={{ marginBottom: '1500px' }} />
+            <div style={{ marginBottom: '3500px' }} />
         </Page>
     );
 });
