@@ -1,3 +1,4 @@
+import 'swiper/scss';
 import './styles/index.scss';
 import { Suspense, useEffect } from 'react';
 import { useSelector } from 'react-redux';
@@ -22,7 +23,7 @@ const App = () => {
                 path: pathname,
             }),
         );
-    }, 200);
+    }, 100);
 
     useEffect(() => {
         window.addEventListener('scroll', onScroll);

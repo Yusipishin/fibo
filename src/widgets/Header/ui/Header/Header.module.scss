@@ -2,7 +2,7 @@
     top: 0;
     width: 100%;
     height: var(--header-full-height);
-    background: var(--inverted-bg-color);
+    background: var(--bg-color);
     transition: height 0.3s;
     transform: translateY(50);
 }
@@ -15,5 +15,7 @@
 
 .collapsed {
     position: sticky;
+    z-index: var(--header-z-index);
+    box-shadow: var(--primary-shadow);
     height: var(--header-collapsed-height);
 }

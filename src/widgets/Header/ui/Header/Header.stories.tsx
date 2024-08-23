@@ -13,9 +13,3 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     decorators: [StoreDecorator({})],
 };
-
-export const Scrolled: Story = {
-    args: {
-        scrolled: true,
-    },
-};

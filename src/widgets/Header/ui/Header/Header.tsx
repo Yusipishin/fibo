@@ -14,7 +14,6 @@ interface HeaderProps {
 }
 
 const headerFullHeight = 140;
-const headerCollapsedHeight = 90;
 
 export const Header = memo(({ className }: HeaderProps) => {
     const { pathname } = useLocation();

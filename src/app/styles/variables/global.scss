@@ -21,10 +21,11 @@
     --font-xl: 800 var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
     // shadow
-    --primary-shadow: 0 4px 24px 0 rgb(0 0 0 / 20%);
+    --primary-shadow: 0 4px 24px 0 rgb(0 0 0 / 26%);
 
     // border
-    --border-opacity: 40%;
+    --border-primary-radius: 12px;
+    --border-full-radius: 50%;
 
     // sizes
     --header-full-height: 140px;
@@ -32,8 +33,12 @@
     --container-width: 1140px;
 
     // z - index
+    --header-z-index: 5;
     --modal-z-index: 10;
     --popup-z-index: 9999;
+
+    // opacity
+    --opacity-half: 0.5;
 
     // colors
     --error-light-color: #f70909;

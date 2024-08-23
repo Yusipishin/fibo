@@ -1,0 +1,46 @@
+.app {
+    .swiper {
+        overflow: visible;
+        position: relative;
+
+        &-slide img {
+            transition: all 0.3s;
+            border-radius: var(--border-primary-radius);
+        }
+    }
+}
+
+.swiper-slide {
+    height: 312px;
+    overflow: hidden;
+}
+
+.swiper-button-disabled {
+    opacity: var(--opacity-half);
+    cursor: auto;
+
+    &:hover {
+        opacity: var(--opacity-half);
+    }
+}
+
+.swiper-prev-arrow,
+.swiper-next-arrow {
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: var(--header-z-index);
+    border-radius: var(--border-full-radius);
+    background: var(--accent-color) url('@/shared/assets/img/icons/arrow-ic.svg') 50% 50% no-repeat;
+}
+
+.swiper-prev-arrow {
+    left: -90px;
+    transform: translateY(-50%);
+}
+
+.swiper-next-arrow {
+    right: -75px;
+    transform: translateY(-50%) scaleX(-1);
+}

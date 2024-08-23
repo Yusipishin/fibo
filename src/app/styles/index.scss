@@ -1,10 +1,12 @@
+@import "variables/global";
 @import "reset";
 @import "fonts";
-@import "variables/global";
+@import "swiper";
 @import "themes/light";
 @import "themes/dark";
 
 body {
+    overflow-x: hidden;
     font: var(--font-m);
     scroll-behavior: smooth;
     color: var(--primary-color);
@@ -22,11 +24,10 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--card-bg);
+    background: var(--inverted-bg-color);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--inverted-primary-color);
     border-radius: 20px;
     border: 2px solid var(--primary-color);
 }
