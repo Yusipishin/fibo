@@ -125,6 +125,17 @@
                 "average": 649,
                 "big": 769
             },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 590,
+                    "big": 810
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 700
+                }
+            },
             "ingredients": {
                 "primary": [
                     {
@@ -166,6 +177,17 @@
                 "small": 429,
                 "average": 649,
                 "big": 769
+            },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 590,
+                    "big": 810
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 700
+                }
             },
             "ingredients": {
                 "primary": [
@@ -209,6 +231,17 @@
                 "average": 649,
                 "big": 769
             },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 590,
+                    "big": 810
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 700
+                }
+            },
             "ingredients": {
                 "primary": [
                     {
@@ -251,6 +284,17 @@
                 "average": 649,
                 "big": 769
             },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 590,
+                    "big": 810
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 700
+                }
+            },
             "ingredients": {
                 "primary": [
                     {
@@ -292,6 +336,17 @@
                 "small": 429,
                 "average": 649,
                 "big": 769
+            },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 590,
+                    "big": 810
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 700
+                }
             },
             "ingredients": {
                 "primary": [
