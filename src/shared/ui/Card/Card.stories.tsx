@@ -16,9 +16,9 @@ export const Primary: Story = {
     },
 };
 
-export const Inverted: Story = {
+export const Outline: Story = {
     args: {
         children: <Text title="test" text="text text" />,
-        theme: CardTheme.INVERTED,
+        theme: CardTheme.OUTLINE,
     },
 };

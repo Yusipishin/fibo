@@ -38,7 +38,9 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": ["ADMIN"],
+            "roles": [
+                "ADMIN"
+            ],
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": false
@@ -56,7 +58,9 @@
             "id": "2",
             "username": "user",
             "password": "123",
-            "roles": ["USER"],
+            "roles": [
+                "USER"
+            ],
             "features": {
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": true
@@ -74,7 +78,9 @@
             "id": "3",
             "username": "manager",
             "password": "123",
-            "roles": ["MANAGER"],
+            "roles": [
+                "MANAGER"
+            ],
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": true
@@ -92,7 +98,9 @@
             "id": "4",
             "username": "testuser",
             "password": "123",
-            "roles": ["ADMIN"],
+            "roles": [
+                "ADMIN"
+            ],
             "features": {
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": false
@@ -105,6 +113,322 @@
                 "city": "Moscow",
                 "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgA_xdu7bbkn44ysPIKt7scHEXEqsiIMUWQ&s"
             }
+        }
+    ],
+    "pizzas": [
+        {
+            "id": "1",
+            "name": "Pizza 1",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "ingredients": {
+                "primary": [
+                    {
+                        "name": "Курица",
+                        "necessary": false
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    }
+                ],
+                "additional": [
+                    {
+                        "name": "Сырный бортик",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+                        "sale": {
+                            "small": null,
+                            "average": 189,
+                            "big": 209
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "name": "Pizza 2",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "ingredients": {
+                "primary": [
+                    {
+                        "name": "Курица",
+                        "necessary": false
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    }
+                ],
+                "additional": [
+                    {
+                        "name": "Сырный бортик",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+                        "sale": {
+                            "small": null,
+                            "average": 189,
+                            "big": 209
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "name": "Pizza 3",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "ingredients": {
+                "primary": [
+                    {
+                        "name": "Курица",
+                        "necessary": false
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    }
+                ],
+                "additional": [
+                    {
+                        "name": "Сырный бортик",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+                        "sale": {
+                            "small": null,
+                            "average": 189,
+                            "big": 209
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "name": "Pizza 4",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "ingredients": {
+                "primary": [
+                    {
+                        "name": "Курица",
+                        "necessary": false
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    }
+                ],
+                "additional": [
+                    {
+                        "name": "Сырный бортик",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+                        "sale": {
+                            "small": null,
+                            "average": 189,
+                            "big": 209
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "5",
+            "name": "Pizza 5",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "ingredients": {
+                "primary": [
+                    {
+                        "name": "Курица",
+                        "necessary": false
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    }
+                ],
+                "additional": [
+                    {
+                        "name": "Сырный бортик",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+                        "sale": {
+                            "small": null,
+                            "average": 189,
+                            "big": 209
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "snacks": [
+        {
+            "id": "1",
+            "name": "Snack 1",
+            "description": "Описание для snack 1",
+            "portion": "10 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        },
+        {
+            "id": "2",
+            "name": "Snack 2",
+            "description": "Описание для snack 1",
+            "portion": "10 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        },
+        {
+            "id": "3",
+            "name": "Snack 3",
+            "description": "Описание для snack 1",
+            "portion": "10 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        },
+        {
+            "id": "4",
+            "name": "Snack 4",
+            "description": "Описание для snack 1",
+            "portion": "10 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        },
+        {
+            "id": "5",
+            "name": "Snack 5",
+            "description": "Описание для snack 1",
+            "portion": "10 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        }
+    ],
+    "drinks": [
+        {
+            "id": "1",
+            "name": "Какао",
+            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
+            "portion": "0,3 л",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        },
+        {
+            "id": "2",
+            "name": "Напиток 2",
+            "portion": "0,5 л",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        },
+        {
+            "id": "3",
+            "name": "Напиток 3",
+            "portion": "0,5 л",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "sale": 189
+        }
+    ],
+    "desserts": [
+        {
+            "id": "1",
+            "sale": 189,
+            "portion": "1 шт",
+            "weight": "120 г",
+            "name": "Маффин Три шоколада 1",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
+            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+        },
+        {
+            "id": "2",
+            "sale": 189,
+            "portion": "1 шт",
+            "weight": "120 г",
+            "name": "Маффин Три шоколада 2",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
+            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+        },
+        {
+            "id": "3",
+            "sale": 189,
+            "portion": "1 шт",
+            "weight": "120 г",
+            "name": "Маффин Три шоколада 3",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
+            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+        },
+        {
+            "id": "4",
+            "sale": 189,
+            "portion": "1 шт",
+            "weight": "120 г",
+            "name": "Маффин Три шоколада 4",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
+            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
         }
     ]
 }

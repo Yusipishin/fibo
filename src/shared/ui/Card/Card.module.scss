@@ -1,17 +1,15 @@
 .Card {
-    padding: 15px;
-    border-radius: 12px;
     background: var(--bg-color);
+    border-radius: var(--border-primary-radius);
 }
 
-.normal {
-    background: var(--bg-color);
-    border: 1px solid var(--primary-color);
-}
+.outline {
+    border: 1px solid var(--inverted-bg-color);
+    transition: border 0.3s;
 
-.inverted {
-    background: var(--inverted-bg-color);
-    border: 1px solid var(--primary-color);
+    &:hover {
+        border-color: #f7d22d99;
+    }
 }
 
 .maxWidth {

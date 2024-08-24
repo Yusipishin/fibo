@@ -3,8 +3,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Card.module.scss';
 
 export enum CardTheme {
-    NORMAL = 'normal',
-    INVERTED = 'inverted',
+    OUTLINE = 'outline',
 }
 
 interface CardProps extends ButtonHTMLAttributes<HTMLDivElement> {
@@ -15,13 +14,7 @@ interface CardProps extends ButtonHTMLAttributes<HTMLDivElement> {
 }
 
 export const Card = memo((props: CardProps) => {
-    const {
-        max,
-        className,
-        children,
-        theme = CardTheme.NORMAL,
-        ...otherProps
-    } = props;
+    const { max, className, children, theme, ...otherProps } = props;
 
     return (
         <div
