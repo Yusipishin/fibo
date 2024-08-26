@@ -3,7 +3,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Flex.module.scss';
 
 export type FlexJustify = 'start' | 'center' | 'end' | 'between';
-export type FlexAlign = 'start' | 'center' | 'end';
+export type FlexAlign = 'start' | 'center' | 'end' | 'stretch';
 export type FlexDirection = 'row' | 'column';
 export type FlexGap = '4' | '8' | '16' | '32' | '64';
 
@@ -18,6 +18,7 @@ const alignClasses: Record<FlexAlign, string> = {
     start: cls.alignStart,
     center: cls.alignCenter,
     end: cls.alignEnd,
+    stretch: cls.stretch,
 };
 
 const directionClasses: Record<FlexDirection, string> = {
@@ -46,6 +47,7 @@ export interface FlexProps extends DivProps {
     direction: FlexDirection;
     gap?: FlexGap;
     max?: boolean;
+    wrap?: boolean;
 }
 
 export const Flex = (props: FlexProps) => {
@@ -57,6 +59,7 @@ export const Flex = (props: FlexProps) => {
         direction = 'row',
         gap,
         max,
+        wrap,
         ...otherProps
     } = props;
 
@@ -70,7 +73,11 @@ export const Flex = (props: FlexProps) => {
 
     return (
         <div
-            className={classNames(cls.Flex, { [cls.max]: max }, classes)}
+            className={classNames(
+                cls.Flex,
+                { [cls.max]: max, [cls.wrap]: wrap },
+                classes,
+            )}
             {...otherProps}
         >
             {children}

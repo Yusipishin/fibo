@@ -38,9 +38,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": false
@@ -58,9 +56,7 @@
             "id": "2",
             "username": "user",
             "password": "123",
-            "roles": [
-                "USER"
-            ],
+            "roles": ["USER"],
             "features": {
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": true
@@ -78,9 +74,7 @@
             "id": "3",
             "username": "manager",
             "password": "123",
-            "roles": [
-                "MANAGER"
-            ],
+            "roles": ["MANAGER"],
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": true
@@ -98,9 +92,7 @@
             "id": "4",
             "username": "testuser",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "features": {
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": false
@@ -304,6 +296,18 @@
                     {
                         "name": "Помидоры",
                         "necessary": true
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
                     }
                 ],
                 "additional": [
@@ -386,7 +390,8 @@
         {
             "id": "1",
             "name": "Snack 1",
-            "description": "Описание для snack 1",
+            "description": "Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1",
+            "weight": 200,
             "portion": "10 шт",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
             "sale": 189
@@ -394,7 +399,8 @@
         {
             "id": "2",
             "name": "Snack 2",
-            "description": "Описание для snack 1",
+            "description": "Описание для snack 2",
+            "weight": 200,
             "portion": "10 шт",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
             "sale": 189
@@ -402,7 +408,8 @@
         {
             "id": "3",
             "name": "Snack 3",
-            "description": "Описание для snack 1",
+            "description": "Описание для snack 3",
+            "weight": 200,
             "portion": "10 шт",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
             "sale": 189
@@ -410,7 +417,8 @@
         {
             "id": "4",
             "name": "Snack 4",
-            "description": "Описание для snack 1",
+            "description": "Описание для snack 4",
+            "weight": 200,
             "portion": "10 шт",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
             "sale": 189
@@ -418,7 +426,8 @@
         {
             "id": "5",
             "name": "Snack 5",
-            "description": "Описание для snack 1",
+            "description": "Описание для snack 5",
+            "weight": 200,
             "portion": "10 шт",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
             "sale": 189
@@ -428,23 +437,25 @@
         {
             "id": "1",
             "name": "Какао",
-            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
+            "description": "Отправляемся",
             "portion": "0,3 л",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.jpg",
             "sale": 189
         },
         {
             "id": "2",
             "name": "Напиток 2",
+            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
             "portion": "0,5 л",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.jpg",
             "sale": 189
         },
         {
             "id": "3",
             "name": "Напиток 3",
+            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
             "portion": "0,5 л",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.jpg",
             "sale": 189
         }
     ],
@@ -453,16 +464,16 @@
             "id": "1",
             "sale": 189,
             "portion": "1 шт",
-            "weight": "120 г",
+            "weight": 120,
             "name": "Маффин Три шоколада 1",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
-            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+            "description": "Маффин Три шоколада 1"
         },
         {
             "id": "2",
             "sale": 189,
             "portion": "1 шт",
-            "weight": "120 г",
+            "weight": 120,
             "name": "Маффин Три шоколада 2",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
             "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
@@ -471,7 +482,7 @@
             "id": "3",
             "sale": 189,
             "portion": "1 шт",
-            "weight": "120 г",
+            "weight": 120,
             "name": "Маффин Три шоколада 3",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
             "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
@@ -480,7 +491,7 @@
             "id": "4",
             "sale": 189,
             "portion": "1 шт",
-            "weight": "120 г",
+            "weight": 120,
             "name": "Маффин Три шоколада 4",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
             "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"

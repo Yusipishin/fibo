@@ -20,7 +20,7 @@ export const navLinks: Record<string, string> = {
     Напитки: '#drinks-list',
     Десерты: '#desserts-list',
     Бакалея: '#grocery-list',
-    Антипасти: '#antipasti-list',
+    Закуски: '#snacks-list',
     Акции: '#promotions-list',
     Комбо: '#combo-list',
     Контакты: '#contacts-list',
