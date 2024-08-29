@@ -1,5 +1,3 @@
-import { FoodPath } from '../consts/food';
-
 interface Sale {
     small: number;
     average: number;
@@ -65,10 +63,3 @@ export interface Dessert extends Drink {
 }
 
 export type AllFoodProps = Pizza & Snack & Drink & Dessert;
-
-export interface FoodPathType {
-    [FoodPath.PIZZAS]: Pizza;
-    [FoodPath.DRINKS]: Drink;
-    [FoodPath.DESSERTS]: Dessert;
-    [FoodPath.SNACKS]: Snack;
-}

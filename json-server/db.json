@@ -384,6 +384,59 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "6",
+            "name": "Pizza 6",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 590,
+                    "big": 810
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 700
+                }
+            },
+            "ingredients": {
+                "primary": [
+                    {
+                        "name": "Курица",
+                        "necessary": false
+                    },
+                    {
+                        "name": "Помидоры",
+                        "necessary": true
+                    }
+                ],
+                "additional": [
+                    {
+                        "name": "Сырный бортик",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+                        "sale": {
+                            "small": null,
+                            "average": 189,
+                            "big": 209
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    }
+                ]
+            }
         }
     ],
     "snacks": [

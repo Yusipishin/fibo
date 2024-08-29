@@ -1,19 +1,58 @@
-import { memo } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FoodList, FoodPath } from '@/entities/Food';
+import { AllFoodProps, FoodPath } from '@/entities/Food';
 import { Page } from '@/widgets/Page';
 import { MainPageSlider } from '../MainPageSlider/MainPageSlider';
+import { FoodList, FoodModal } from '@/features/FoodCustomize';
+
+const foodLists: { title: string; path: FoodPath }[] = [
+    {
+        title: 'Пицца',
+        path: FoodPath.PIZZAS,
+    },
+    {
+        title: 'Напитки',
+        path: FoodPath.DRINKS,
+    },
+    {
+        title: 'Десерты',
+        path: FoodPath.DESSERTS,
+    },
+    {
+        title: 'Закуски',
+        path: FoodPath.SNACKS,
+    },
+];
 
 const MainPage = memo(() => {
     const { t } = useTranslation();
+    const [isFoodModal, setIsFoodModal] = useState(false);
+    const [food, setFood] = useState({});
+
+    const onCloseModal = useCallback(() => {
+        setIsFoodModal(false);
+    }, []);
+
+    const onShowModal = useCallback((food: AllFoodProps) => {
+        setIsFoodModal(true);
+        setFood(food);
+    }, []);
 
     return (
         <Page data-testid="MainPage">
             <MainPageSlider />
-            <FoodList title={t('Пицца')} endpoint={FoodPath.PIZZAS} />
-            <FoodList title={t('Напитки')} endpoint={FoodPath.DRINKS} />
-            <FoodList title={t('Десерты')} endpoint={FoodPath.DESSERTS} />
-            <FoodList title={t('Закуски')} endpoint={FoodPath.SNACKS} />
+            {foodLists.map((food) => (
+                <FoodList
+                    title={t(food.title)}
+                    endpoint={food.path}
+                    onShowModal={onShowModal}
+                />
+            ))}
+            <FoodModal
+                food={food as AllFoodProps}
+                isOpen={isFoodModal}
+                onClose={onCloseModal}
+            />
             <div style={{ marginBottom: '3500px' }} />
         </Page>
     );
