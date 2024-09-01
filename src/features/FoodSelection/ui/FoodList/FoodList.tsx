@@ -1,9 +1,7 @@
 import { memo } from 'react';
 import { AllFoodProps, FoodListWrapper, FoodPath } from '@/entities/Food';
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { useGetList } from '@/shared/lib/hooks/useGetList/useGetList';
 import { VStack } from '@/shared/ui/Stack';
-import cls from './FoodList.module.scss';
 
 interface FoodListProps {
     title: string;
@@ -24,7 +22,7 @@ export const FoodList = memo((props: FoodListProps) => {
     if (isLoading || error || !foods) return null;
 
     return (
-        <VStack max className={classNames(cls.FoodLists, {}, [className])}>
+        <VStack max className={className}>
             <FoodListWrapper
                 foods={foods}
                 title={title}

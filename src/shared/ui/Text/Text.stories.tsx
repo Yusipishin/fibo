@@ -59,3 +59,19 @@ export const SizeS: Story = {
         size: TextSize.S,
     },
 };
+
+export const SizeXL: Story = {
+    args: {
+        title: 'Main Title',
+        text: 'Random text text text text',
+        size: TextSize.XL,
+    },
+};
+
+export const SizeXS: Story = {
+    args: {
+        title: 'Main Title',
+        text: 'Random text text text text',
+        size: TextSize.XS,
+    },
+};

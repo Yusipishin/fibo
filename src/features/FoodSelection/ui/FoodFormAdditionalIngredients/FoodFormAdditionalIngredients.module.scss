@@ -1,0 +1,15 @@
+.FoodFormAdditionalIngredients {
+    max-height: 300px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar { width: 0; }
+}
+
+.addIngr {
+    max-width: 100px;
+}
+
+.ingrImg {
+    max-height: 65px;
+    max-width: 70px;
+}

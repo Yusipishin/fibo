@@ -1,3 +1,5 @@
+import { FoodType } from '../consts/food';
+
 interface Sale {
     small: number;
     average: number;
@@ -15,7 +17,9 @@ interface ThinDoughWeight {
     big: number;
 }
 
-interface Weight {
+export type DoughWeight = TraditionalDoughWeight | ThinDoughWeight;
+
+export interface Weight {
     traditional: TraditionalDoughWeight;
     thin: ThinDoughWeight;
 }
@@ -38,6 +42,7 @@ interface Ingredients {
 
 export interface Pizza {
     id: string;
+    type: FoodType;
     img: string;
     name: string;
     sale: Sale;
@@ -47,6 +52,7 @@ export interface Pizza {
 
 export interface Drink {
     id: string;
+    type: FoodType;
     img: string;
     name: string;
     sale: number;

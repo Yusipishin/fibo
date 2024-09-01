@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { AllFoodProps, FoodPath } from '@/entities/Food';
 import { Page } from '@/widgets/Page';
 import { MainPageSlider } from '../MainPageSlider/MainPageSlider';
-import { FoodList, FoodModal } from '@/features/FoodCustomize';
+import { FoodList, FoodModal } from '@/features/FoodSelection';
 
 const foodLists: { title: string; path: FoodPath }[] = [
     {

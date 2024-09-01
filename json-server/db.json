@@ -110,12 +110,13 @@
     "pizzas": [
         {
             "id": "1",
+            "type": "PIZZA",
             "name": "Pizza 1",
             "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
             "sale": {
-                "small": 429,
-                "average": 649,
-                "big": 769
+                "small": 777,
+                "average": 888,
+                "big": 999
             },
             "weight": {
                 "traditional": {
@@ -157,12 +158,76 @@
                             "average": 99,
                             "big": 119
                         }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
                     }
                 ]
             }
         },
         {
             "id": "2",
+            "type": "PIZZA",
             "name": "Pizza 2",
             "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
             "sale": {
@@ -210,12 +275,40 @@
                             "average": 99,
                             "big": 119
                         }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
                     }
                 ]
             }
         },
         {
             "id": "3",
+            "type": "PIZZA",
             "name": "Pizza 3",
             "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
             "sale": {
@@ -263,12 +356,40 @@
                             "average": 99,
                             "big": 119
                         }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
                     }
                 ]
             }
         },
         {
             "id": "4",
+            "type": "PIZZA",
             "name": "Pizza 4",
             "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
             "sale": {
@@ -328,12 +449,40 @@
                             "average": 99,
                             "big": 119
                         }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
                     }
                 ]
             }
         },
         {
             "id": "5",
+            "type": "PIZZA",
             "name": "Pizza 5",
             "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
             "sale": {
@@ -381,12 +530,40 @@
                             "average": 99,
                             "big": 119
                         }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
                     }
                 ]
             }
         },
         {
             "id": "6",
+            "type": "PIZZA",
             "name": "Pizza 6",
             "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
             "sale": {
@@ -434,6 +611,33 @@
                             "average": 99,
                             "big": 119
                         }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
+                    },
+                    {
+                        "name": "Сливочная моцарелла",
+                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+                        "sale": {
+                            "small": 89,
+                            "average": 99,
+                            "big": 119
+                        }
                     }
                 ]
             }
@@ -442,6 +646,7 @@
     "snacks": [
         {
             "id": "1",
+            "type": "SNACK",
             "name": "Snack 1",
             "description": "Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1",
             "weight": 200,
@@ -451,6 +656,7 @@
         },
         {
             "id": "2",
+            "type": "SNACK",
             "name": "Snack 2",
             "description": "Описание для snack 2",
             "weight": 200,
@@ -460,6 +666,7 @@
         },
         {
             "id": "3",
+            "type": "SNACK",
             "name": "Snack 3",
             "description": "Описание для snack 3",
             "weight": 200,
@@ -469,6 +676,7 @@
         },
         {
             "id": "4",
+            "type": "SNACK",
             "name": "Snack 4",
             "description": "Описание для snack 4",
             "weight": 200,
@@ -478,6 +686,7 @@
         },
         {
             "id": "5",
+            "type": "SNACK",
             "name": "Snack 5",
             "description": "Описание для snack 5",
             "weight": 200,
@@ -489,6 +698,7 @@
     "drinks": [
         {
             "id": "1",
+            "type": "DRINK",
             "name": "Какао",
             "description": "Отправляемся",
             "portion": "0,3 л",
@@ -497,6 +707,7 @@
         },
         {
             "id": "2",
+            "type": "DRINK",
             "name": "Напиток 2",
             "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
             "portion": "0,5 л",
@@ -505,6 +716,7 @@
         },
         {
             "id": "3",
+            "type": "DRINK",
             "name": "Напиток 3",
             "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
             "portion": "0,5 л",
@@ -515,6 +727,7 @@
     "desserts": [
         {
             "id": "1",
+            "type": "DESSERT",
             "sale": 189,
             "portion": "1 шт",
             "weight": 120,
@@ -524,6 +737,7 @@
         },
         {
             "id": "2",
+            "type": "DESSERT",
             "sale": 189,
             "portion": "1 шт",
             "weight": 120,
@@ -533,6 +747,7 @@
         },
         {
             "id": "3",
+            "type": "DESSERT",
             "sale": 189,
             "portion": "1 шт",
             "weight": 120,
@@ -542,6 +757,7 @@
         },
         {
             "id": "4",
+            "type": "DESSERT",
             "sale": 189,
             "portion": "1 шт",
             "weight": 120,

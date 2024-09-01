@@ -14,6 +14,7 @@ export enum ButtonTheme {
 }
 
 export enum ButtonSize {
+    XS = 'size_xs',
     S = 'size_s',
     M = 'size_m',
     L = 'size_l',
@@ -45,7 +46,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     /**
      * Увеличивает кнопку на всю свободную ширину
      */
-    fullWidth?: boolean;
+    max?: boolean;
 }
 
 export const Button = memo((props: ButtonProps) => {
@@ -56,14 +57,14 @@ export const Button = memo((props: ButtonProps) => {
         square,
         size = ButtonSize.M,
         disabled,
-        fullWidth,
+        max,
         ...otherProps
     } = props;
 
     const mods: Mods = {
         [cls.square]: square,
         [cls.disabled]: disabled,
-        [cls.fullWidth]: fullWidth,
+        [cls.max]: max,
     };
 
     return (

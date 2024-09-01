@@ -29,7 +29,7 @@ function FoodItem({ className, food, onShowModal }: FoodItemProps) {
                 <Text title={food.name} />
                 <Text
                     text={
-                        food.description ||
+                        food.description ??
                         food.ingredients.primary
                             .map((food) => food.name)
                             .join(', ')
