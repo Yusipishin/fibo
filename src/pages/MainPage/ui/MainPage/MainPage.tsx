@@ -53,7 +53,6 @@ const MainPage = memo(() => {
                 isOpen={isFoodModal}
                 onClose={onCloseModal}
             />
-            <div style={{ marginBottom: '3500px' }} />
         </Page>
     );
 });

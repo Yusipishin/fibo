@@ -11,14 +11,3 @@ export enum FoodType {
     DRINK = 'DRINK',
     DESSERT = 'DESSERT',
 }
-
-export enum PizzaDough {
-    THIN = 'Тонкое',
-    TRADITIONAL = 'Традиционное',
-}
-
-export enum PizzaWeight {
-    SMALL = 'Маленькая',
-    AVERAGE = 'Средняя',
-    BIG = 'Большая',
-}

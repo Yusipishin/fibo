@@ -1,9 +1,5 @@
-export {
-    FoodPath,
-    PizzaDough,
-    PizzaWeight,
-    FoodType,
-} from './model/consts/food';
+export { FoodPath, FoodType } from './model/consts/food';
+export { PizzaDough, PizzaWeight } from './model/consts/pizza';
 export type {
     AllFoodProps,
     Dessert,

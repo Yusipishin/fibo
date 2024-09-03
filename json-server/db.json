@@ -107,6 +107,29 @@
             }
         }
     ],
+    "cart": [
+        {
+            "id": "1",
+            "list": [
+                {
+                    "id": "1",
+                    "count": 1,
+                    "price": 700,
+                    "name": "С креветками и трюфелями",
+                    "description": "Курица, Курица, Курица, Сырный бортик, Сливочная моцарелла",
+                    "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
+                },
+                {
+                    "id": "2",
+                    "count": 2,
+                    "price": 300,
+                    "name": "С креветками и трюфелями",
+                    "description": "Курица, Курица",
+                    "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
+                }
+            ]
+        }
+    ],
     "pizzas": [
         {
             "id": "1",

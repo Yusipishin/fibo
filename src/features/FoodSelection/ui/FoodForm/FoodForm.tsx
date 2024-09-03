@@ -36,6 +36,7 @@ const FoodForm = memo((props: FoodFormProps) => {
     const [price, setPrice] = useState(0);
     const [dough, setDough] = useState(PizzaDough.TRADITIONAL);
     const [weight, setWeight] = useState(PizzaWeight.AVERAGE);
+    const [ingredients, setIngredients] = useState(['']);
 
     useEffect(() => {
         setPrice(food.sale.average ?? food.sale);
@@ -44,6 +45,7 @@ const FoodForm = memo((props: FoodFormProps) => {
             setPrice(0);
             setDough(PizzaDough.TRADITIONAL);
             setWeight(PizzaWeight.AVERAGE);
+            setIngredients([]);
         };
     }, [food.sale]);
 
@@ -60,10 +62,19 @@ const FoodForm = memo((props: FoodFormProps) => {
                             dough={dough}
                             weight={weight}
                         />
-                        <FoodFormPrimaryIngredients food={food} />
+                        <FoodFormPrimaryIngredients
+                            ingredients={ingredients}
+                            setIngredients={setIngredients}
+                            food={food}
+                        />
                         <FoodFormWeight dough={dough} setWeight={setWeight} />
                         <FoodFormDough weight={weight} setDough={setDough} />
-                        <FoodFormAdditionalIngredients food={food} />
+                        <FoodFormAdditionalIngredients
+                            ingredients={ingredients}
+                            setIngredients={setIngredients}
+                            weight={weight}
+                            food={food}
+                        />
                     </>
                 ) : (
                     <>
