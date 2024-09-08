@@ -7,6 +7,7 @@ import { AppLink } from '@/shared/ui/AppLink';
 import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import Logo from '@/shared/assets/img/logo.png';
 import { Skeleton } from '@/shared/ui/Skeleton';
+import { Text } from '@/shared/ui/Text';
 
 interface HeaderBottomProps {
     scrolled?: boolean;
@@ -49,9 +50,17 @@ export const HeaderBottom = memo(({ scrolled }: HeaderBottomProps) => {
             </HStack>
             <HStack gap="32">
                 {!scrolled && (
-                    <Button className={cls.login}>{t('Войти')}</Button>
+                    <Button className={cls.login}>
+                        <Text theme="secondary" text={t('Войти')} />
+                    </Button>
                 )}
-                <Button className={cls.cart}>{t('Корзина')}</Button>
+                <Button theme="accent" className={cls.cart}>
+                    <HStack gap="8">
+                        <Text text={t('Корзина')} />
+                        |
+                        <Text text="3" />
+                    </HStack>
+                </Button>
             </HStack>
         </HStack>
     );

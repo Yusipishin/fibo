@@ -2,24 +2,9 @@ import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
-export enum ButtonTheme {
-    CLEAR = 'clear',
-    CLEAR_SECONDARY = 'clearSecondary',
-    CLEAR_THIRD = 'clearThird',
-    OUTLINE = 'outline',
-    OUTLINE_SECONDARY = 'outlineSecondary',
-    OUTLINE_THIRD = 'outlineThird',
-    BACKGROUND = 'background',
-    BACKGROUND_INVERTED = 'backgroundInverted',
-}
-
-export enum ButtonSize {
-    XS = 'size_xs',
-    S = 'size_s',
-    M = 'size_m',
-    L = 'size_l',
-    XL = 'size_xl',
-}
+type ButtonTheme = 'clear' | 'inverted' | 'accent' | 'outline';
+type ButtonRadius = 'halfRadius' | 'xsRadius';
+type ButtonSize = 'size_xs' | 'size_s' | 'size_m' | 'size_l' | 'size_xl';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
@@ -47,15 +32,20 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
      * Увеличивает кнопку на всю свободную ширину
      */
     max?: boolean;
+    /**
+     * Округляет кнопку
+     */
+    radius?: ButtonRadius;
 }
 
 export const Button = memo((props: ButtonProps) => {
     const {
         className,
         children,
-        theme = ButtonTheme.CLEAR,
+        theme = 'clear',
         square,
-        size = ButtonSize.M,
+        size = 'size_m',
+        radius = 'xsRadius',
         disabled,
         max,
         ...otherProps
@@ -75,6 +65,7 @@ export const Button = memo((props: ButtonProps) => {
                 className,
                 cls[theme],
                 cls[size],
+                cls[radius],
             ])}
             {...otherProps}
         >

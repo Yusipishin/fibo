@@ -67,8 +67,16 @@ const FoodForm = memo((props: FoodFormProps) => {
                             setIngredients={setIngredients}
                             food={food}
                         />
-                        <FoodFormWeight dough={dough} setWeight={setWeight} />
-                        <FoodFormDough weight={weight} setDough={setDough} />
+                        <FoodFormWeight
+                            weight={weight}
+                            dough={dough}
+                            setWeight={setWeight}
+                        />
+                        <FoodFormDough
+                            dough={dough}
+                            weight={weight}
+                            setDough={setDough}
+                        />
                         <FoodFormAdditionalIngredients
                             ingredients={ingredients}
                             setIngredients={setIngredients}

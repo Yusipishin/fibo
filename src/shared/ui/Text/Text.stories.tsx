@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Text, TextSize, TextTheme } from './Text';
+import { Text, TextSize } from './Text';
 
 const meta: Meta<typeof Text> = {
     component: Text,
@@ -20,7 +20,7 @@ export const Error: Story = {
     args: {
         title: 'Main Title',
         text: 'Random text text text text',
-        theme: TextTheme.ERROR,
+        theme: 'error',
     },
 };
 

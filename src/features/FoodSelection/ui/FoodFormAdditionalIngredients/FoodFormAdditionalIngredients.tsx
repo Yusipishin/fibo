@@ -5,7 +5,7 @@ import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { Text, TextSize } from '@/shared/ui/Text';
 import { HStack } from '@/shared/ui/Stack';
 import { DoughWeight, Pizza, PizzaWeight } from '@/entities/Food';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/Button';
 import { mapPizzaWeight } from '../FoodFormInfo/FoodFormInfo';
 
 interface FoodFormAdditionalIngredientsProps {
@@ -42,7 +42,7 @@ export const FoodFormAdditionalIngredients = memo(
                     return (
                         <Button
                             onClick={handleClick(ingr.name)}
-                            theme={ButtonTheme.OUTLINE_SECONDARY}
+                            theme="outline"
                             className={cls.addIngr}
                         >
                             <AppImage className={cls.ingrImg} src={ingr.img} />

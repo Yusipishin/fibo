@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppImage } from '@/shared/ui/AppImage/AppImage';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/Button';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text';
 import { AllFoodProps } from '../../model/types/food';
@@ -38,9 +38,7 @@ function FoodItem({ className, food, onShowModal }: FoodItemProps) {
             </VStack>
             <HStack justify="between" max>
                 <Text text={`от ${food.sale.average || food.sale} ₽`} />
-                <Button theme={ButtonTheme.BACKGROUND_INVERTED}>
-                    {t('В корзину')}
-                </Button>
+                <Button theme="accent">{t('В корзину')}</Button>
             </HStack>
         </VStack>
     );

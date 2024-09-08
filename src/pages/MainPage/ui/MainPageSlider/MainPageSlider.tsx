@@ -70,7 +70,7 @@ export const MainPageSlider = memo(() => (
                 }}
             </SwiperSlide>
         ))}
-        <Button className="swiper-prev-arrow" />
-        <Button className="swiper-next-arrow" />
+        <Button radius="halfRadius" className="swiper-prev-arrow" />
+        <Button radius="halfRadius" className="swiper-next-arrow" />
     </Swiper>
 ));

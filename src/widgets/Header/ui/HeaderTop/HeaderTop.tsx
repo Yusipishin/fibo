@@ -6,8 +6,8 @@ import YandexIcon from '@/shared/assets/img/icons/yandex-food-ic.svg';
 import StarIcon from '@/shared/assets/img/icons/star-ic.svg';
 import { AppLink } from '@/shared/ui/AppLink';
 import { HStack, VStack } from '@/shared/ui/Stack';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
-import { Text } from '@/shared/ui/Text';
+import { Button } from '@/shared/ui/Button';
+import { Text, TextSize } from '@/shared/ui/Text';
 import { Skeleton } from '@/shared/ui/Skeleton';
 import { Icon } from '@/shared/ui/Icon';
 import cls from './HeaderTop.module.scss';
@@ -35,7 +35,9 @@ export const HeaderTop = memo((props: HeaderTopProps) => {
                 <VStack gap="8">
                     <HStack gap="8">
                         <Text text={t('Доставка пасты')} />
-                        <Button>{t('Москва')}</Button>
+                        <Button>
+                            <Text theme="accent" text={t('Москва')} />
+                        </Button>
                     </HStack>
                     <HStack gap="32">
                         <HStack gap="8">
@@ -54,11 +56,15 @@ export const HeaderTop = memo((props: HeaderTopProps) => {
                 </VStack>
             </HStack>
             <HStack gap="32">
-                <Button theme={ButtonTheme.CLEAR}>
+                <Button className={cls.callBtn} theme="inverted">
                     {t('Заказать звонок')}
                 </Button>
                 <AppLink to="tel:8 499 391-84-49">
-                    {t('Номер телефона сайта')}
+                    <Text
+                        theme="accent"
+                        size={TextSize.L}
+                        text={t('Номер телефона сайта')}
+                    />
                 </AppLink>
             </HStack>
         </HStack>

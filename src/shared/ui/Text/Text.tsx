@@ -2,12 +2,7 @@ import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Text.module.scss';
 
-export enum TextTheme {
-    PRIMARY = 'primary',
-    INVERTED = 'inverted',
-    ERROR = 'error',
-}
-
+type TextTheme = 'primary' | 'error' | 'accent' | 'secondary' | 'third';
 type TextAlign = 'left' | 'right' | 'center';
 
 export enum TextSize {
@@ -44,7 +39,7 @@ export const Text = memo((props: TextProps) => {
         className,
         title,
         text,
-        theme = TextTheme.PRIMARY,
+        theme = 'primary',
         align = 'left',
         size = TextSize.M,
         'data-testid': dataTestId = 'Text',
