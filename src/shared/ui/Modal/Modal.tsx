@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import { useModal } from '../../lib/hooks/useModal/useModal';
 import { Overlay } from '../Overlay/Overlay';
@@ -25,6 +25,13 @@ export const Modal = (props: ModalProps) => {
         onClose,
         isOpen,
     });
+
+    useEffect(() => {
+        document.body.style.overflowY = isOpen ? 'hidden' : 'auto';
+        return () => {
+            document.body.style.overflowY = 'auto';
+        };
+    }, [isOpen]);
 
     const mods: Mods = {
         [cls.opened]: isOpen,

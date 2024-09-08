@@ -34,7 +34,7 @@ export const HeaderTop = memo((props: HeaderTopProps) => {
                 </AppLink>
                 <VStack gap="8">
                     <HStack gap="8">
-                        <Text text={t('Доставка пасты')} />
+                        <Text title={{ txt: t('Доставка пасты'), tag: 'h1' }} />
                         <Button>
                             <Text theme="accent" text={t('Москва')} />
                         </Button>

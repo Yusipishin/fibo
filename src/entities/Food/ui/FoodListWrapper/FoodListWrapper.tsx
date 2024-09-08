@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { HStack } from '@/shared/ui/Stack';
-import { Text } from '@/shared/ui/Text';
+import { Text, TextSize } from '@/shared/ui/Text';
 import { AllFoodProps } from '../../model/types/food';
 import FoodItem from '../FoodItem/FoodItem';
 import cls from './FoodListWrapper.module.scss';
@@ -26,7 +26,7 @@ export const FoodListWrapper = memo((props: FoodListWrapperProps) => {
     if (!isLoading && !foods?.length) {
         return (
             <div className={classNames(cls.ArticleList, {}, [className])}>
-                <Text title={t('Продукты не найдены')} />
+                <Text text={t('Продукты не найдены')} />
             </div>
         );
     }
@@ -37,7 +37,12 @@ export const FoodListWrapper = memo((props: FoodListWrapperProps) => {
 
     return (
         <div className={classNames(cls.FoodList, {}, [className])}>
-            <Text className={cls.title} title={t(title)} />
+            <Text
+                theme="accent"
+                size={TextSize.XL}
+                className={cls.title}
+                title={{ txt: t(title), tag: 'h2' }}
+            />
             <HStack
                 max
                 wrap

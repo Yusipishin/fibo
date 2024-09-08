@@ -3,16 +3,25 @@
 }
 
 .img {
-    max-width: 350px;
+    max-width: 370px;
     margin: 0 85px;
 }
 
 .wrapper {
-    max-width: 330px;
+    max-width: 350px;
 }
 
 .portion {
     background: var(--inverted-bg-color);
     color: var(--secondary-color);
+    padding: 5px;
     width: 100%;
+}
+
+.addBtn {
+    padding: 15px 0;
+}
+
+.shadowTop {
+    box-shadow: 0 -50px 25px 5px var(--bg-color);
 }

@@ -48,12 +48,13 @@ export const FoodFormAdditionalIngredients = memo(
                             <AppImage className={cls.ingrImg} src={ingr.img} />
                             <Text
                                 align="center"
-                                size={TextSize.XS}
+                                size={TextSize.S}
                                 text={ingr.name}
                             />
                             <Text
+                                theme="accent"
                                 align="center"
-                                size={TextSize.XS}
+                                size={TextSize.S}
                                 text={`${ingr?.sale[weighthEn]} ₽`}
                             />
                         </Button>
