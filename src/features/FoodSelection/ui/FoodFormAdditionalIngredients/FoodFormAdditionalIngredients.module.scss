@@ -10,6 +10,10 @@
     max-width: 110px;
 }
 
+.selected {
+    border: 1px solid var(--accent-color);
+}
+
 .ingrImg {
     max-height: 65px;
     max-width: 80px;

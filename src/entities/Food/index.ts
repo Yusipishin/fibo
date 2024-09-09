@@ -8,5 +8,6 @@ export type {
     Snack,
     Weight,
     DoughWeight,
+    AdditionalIngredient,
 } from './model/types/food';
 export { FoodListWrapper } from './ui/FoodListWrapper/FoodListWrapper';

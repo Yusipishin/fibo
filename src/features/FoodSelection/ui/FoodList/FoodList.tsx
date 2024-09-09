@@ -15,17 +15,16 @@ export const FoodList = memo((props: FoodListProps) => {
 
     const {
         data: foods,
-        error,
+        isError,
         isLoading,
     } = useGetList<AllFoodProps, FoodPath>(endpoint);
-
-    if (isLoading || error || !foods) return null;
 
     return (
         <VStack max className={className}>
             <FoodListWrapper
                 foods={foods}
                 title={title}
+                isError={isError}
                 isLoading={isLoading}
                 onShowModal={onShowModal}
             />

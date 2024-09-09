@@ -29,15 +29,10 @@ interface PrimaryIngredient {
     necessary: false;
 }
 
-interface AdditionalIngredient {
+export interface AdditionalIngredient {
     name: string;
     img: string;
     sale: Sale;
-}
-
-interface Ingredients {
-    primary: PrimaryIngredient[];
-    additional: AdditionalIngredient[];
 }
 
 export interface Pizza {
@@ -47,7 +42,7 @@ export interface Pizza {
     name: string;
     sale: Sale;
     weight: Weight;
-    ingredients: Ingredients;
+    ingredients: PrimaryIngredient[];
 }
 
 export interface Drink {

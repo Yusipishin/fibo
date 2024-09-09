@@ -18,9 +18,14 @@
 }
 
 .outline {
+    transition: border 0.3s;
     border: 1px solid var(--inverted-bg-color);
     color: var(--primary-color);
     background: none;
+
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .accent {

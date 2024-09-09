@@ -31,9 +31,7 @@ function FoodItem({ className, food, onShowModal }: FoodItemProps) {
                     size={TextSize.S}
                     text={
                         food.description ??
-                        food.ingredients.primary
-                            .map((food) => food.name)
-                            .join(', ')
+                        food.ingredients.map((food) => food.name).join(', ')
                     }
                 />
             </VStack>

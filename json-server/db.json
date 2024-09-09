@@ -152,101 +152,16 @@
                     "big": 700
                 }
             },
-            "ingredients": {
-                "primary": [
-                    {
-                        "name": "Курица",
-                        "necessary": false
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    }
-                ],
-                "additional": [
-                    {
-                        "name": "Сырный бортик",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
-                        "sale": {
-                            "small": null,
-                            "average": 189,
-                            "big": 209
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    }
-                ]
-            }
+            "ingredients": [
+                {
+                    "name": "Курица",
+                    "necessary": false
+                },
+                {
+                    "name": "Помидоры",
+                    "necessary": true
+                }
+            ]
         },
         {
             "id": "2",
@@ -269,65 +184,16 @@
                     "big": 700
                 }
             },
-            "ingredients": {
-                "primary": [
-                    {
-                        "name": "Курица",
-                        "necessary": false
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    }
-                ],
-                "additional": [
-                    {
-                        "name": "Сырный бортик",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
-                        "sale": {
-                            "small": null,
-                            "average": 189,
-                            "big": 209
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    }
-                ]
-            }
+            "ingredients": [
+                {
+                    "name": "Курица",
+                    "necessary": false
+                },
+                {
+                    "name": "Помидоры",
+                    "necessary": true
+                }
+            ]
         },
         {
             "id": "3",
@@ -350,65 +216,16 @@
                     "big": 700
                 }
             },
-            "ingredients": {
-                "primary": [
-                    {
-                        "name": "Курица",
-                        "necessary": false
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    }
-                ],
-                "additional": [
-                    {
-                        "name": "Сырный бортик",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
-                        "sale": {
-                            "small": null,
-                            "average": 189,
-                            "big": 209
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    }
-                ]
-            }
+            "ingredients": [
+                {
+                    "name": "Курица",
+                    "necessary": false
+                },
+                {
+                    "name": "Помидоры",
+                    "necessary": true
+                }
+            ]
         },
         {
             "id": "4",
@@ -431,77 +248,16 @@
                     "big": 700
                 }
             },
-            "ingredients": {
-                "primary": [
-                    {
-                        "name": "Курица",
-                        "necessary": false
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    }
-                ],
-                "additional": [
-                    {
-                        "name": "Сырный бортик",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
-                        "sale": {
-                            "small": null,
-                            "average": 189,
-                            "big": 209
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    }
-                ]
-            }
+            "ingredients": [
+                {
+                    "name": "Курица",
+                    "necessary": false
+                },
+                {
+                    "name": "Помидоры",
+                    "necessary": true
+                }
+            ]
         },
         {
             "id": "5",
@@ -524,65 +280,16 @@
                     "big": 700
                 }
             },
-            "ingredients": {
-                "primary": [
-                    {
-                        "name": "Курица",
-                        "necessary": false
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    }
-                ],
-                "additional": [
-                    {
-                        "name": "Сырный бортик",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
-                        "sale": {
-                            "small": null,
-                            "average": 189,
-                            "big": 209
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    }
-                ]
-            }
+            "ingredients": [
+                {
+                    "name": "Курица",
+                    "necessary": false
+                },
+                {
+                    "name": "Помидоры",
+                    "necessary": true
+                }
+            ]
         },
         {
             "id": "6",
@@ -605,64 +312,62 @@
                     "big": 700
                 }
             },
-            "ingredients": {
-                "primary": [
-                    {
-                        "name": "Курица",
-                        "necessary": false
-                    },
-                    {
-                        "name": "Помидоры",
-                        "necessary": true
-                    }
-                ],
-                "additional": [
-                    {
-                        "name": "Сырный бортик",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
-                        "sale": {
-                            "small": null,
-                            "average": 189,
-                            "big": 209
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    },
-                    {
-                        "name": "Сливочная моцарелла",
-                        "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-                        "sale": {
-                            "small": 89,
-                            "average": 99,
-                            "big": 119
-                        }
-                    }
-                ]
+            "ingredients": [
+                {
+                    "name": "Курица",
+                    "necessary": false
+                },
+                {
+                    "name": "Помидоры",
+                    "necessary": true
+                }
+            ]
+        }
+    ],
+    "additional-ingredients": [
+        {
+            "name": "Сырный бортик",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": null,
+                "average": 189,
+                "big": 209
+            }
+        },
+        {
+            "name": "Сливочная моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Сливочная моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Сливочная моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Сливочная моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
             }
         }
     ],

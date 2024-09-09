@@ -23,6 +23,7 @@ import { Button } from '@/shared/ui/Button';
 export interface FoodFormProps {
     food: AllFoodProps;
     className?: string;
+    isOpen: boolean;
 }
 
 // const initialReducers: ReducersList = {
@@ -31,7 +32,7 @@ export interface FoodFormProps {
 
 const FoodForm = memo((props: FoodFormProps) => {
     const { t } = useTranslation();
-    const { className, food } = props;
+    const { className, food, isOpen } = props;
 
     const [price, setPrice] = useState(0);
     const [dough, setDough] = useState(PizzaDough.TRADITIONAL);
@@ -39,15 +40,15 @@ const FoodForm = memo((props: FoodFormProps) => {
     const [ingredients, setIngredients] = useState(['']);
 
     useEffect(() => {
-        setPrice(food.sale.average ?? food.sale);
-
-        return () => {
+        if (isOpen) {
+            setPrice(food.sale.average ?? food.sale);
+        } else {
             setPrice(0);
             setDough(PizzaDough.TRADITIONAL);
             setWeight(PizzaWeight.AVERAGE);
             setIngredients([]);
-        };
-    }, [food.sale]);
+        }
+    }, [food.sale, isOpen]);
 
     return (
         // <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
@@ -84,7 +85,6 @@ const FoodForm = memo((props: FoodFormProps) => {
                             ingredients={ingredients}
                             setIngredients={setIngredients}
                             weight={weight}
-                            food={food}
                         />
                     </>
                 ) : (
