@@ -18,17 +18,11 @@ import { FoodFormInfo } from '../FoodFormInfo/FoodFormInfo';
 import { Button } from '@/shared/ui/Button';
 import { FoodFormIngredients } from '../FoodFormPrimaryIngredients/FoodFormPrimaryIngredients';
 
-// import { FoodCustomizeReducer } from '../../model/slices/FoodSelectionSlice';
-
 export interface FoodFormProps {
     food: AllFoodProps;
     className?: string;
     isOpen: boolean;
 }
-
-// const initialReducers: ReducersList = {
-//     foodCustomizeForm: FoodCustomizeReducer,
-// };
 
 const FoodForm = memo((props: FoodFormProps) => {
     const { t } = useTranslation();
@@ -51,7 +45,6 @@ const FoodForm = memo((props: FoodFormProps) => {
     }, [food.sale, isOpen]);
 
     return (
-        // <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
         <HStack className={classNames(cls.FoodForm, {}, [className])}>
             <AppImage className={cls.img} alt={food.name} src={food.img} />
             <VStack max gap="8" className={cls.wrapper}>
@@ -109,7 +102,6 @@ const FoodForm = memo((props: FoodFormProps) => {
                 </Button>
             </VStack>
         </HStack>
-        // </DynamicModuleLoader>
     );
 });
 

@@ -490,24 +490,6 @@
             }
         },
         {
-            "name": "Сливочная моцарелла",
-            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-            "sale": {
-                "small": 89,
-                "average": 99,
-                "big": 119
-            }
-        },
-        {
-            "name": "Сливочная моцарелла",
-            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
-            "sale": {
-                "small": 89,
-                "average": 99,
-                "big": 119
-            }
-        },
-        {
             "name": "Креветки",
             "img": "https://cdn.dodostatic.net/static/Img/Ingredients/11eee5d51d4c576da0f0db611c8947bd.png",
             "sale": {
@@ -891,6 +873,32 @@
             "name": "Рулетики с корицей",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B679E058AEC6DC063470AFB2.jpg",
             "description": "Десерт, одобренный нашими бабушками. Горячие сладкие рулетики с пряной корицей и сахаром"
+        }
+    ],
+    "promotions": [
+        {
+            "id": "1",
+            "name": "Ну всё, кешбэк!",
+            "img": "https://cdn.dodostatic.net/static/Img/BonusActionBanners/Gallery/g_1642653583_ee54149010ab4dcf8f55e2bdd98f8d5d.jpeg",
+            "description": "Делайте заказы и получайте 5% додокоинами. Меняйте додокоины на еду и напитки в мобильном приложении за 1 ₽."
+        },
+        {
+            "id": "2",
+            "name": "Работа в Додо!",
+            "img": "https://cdn.dodostatic.net/static/Img/BonusActionBanners/Gallery/g_1678730080_3ddc392e7b3d44a18ee262f7dfc774ec.jpeg",
+            "description": "В Додо есть то, что важно. Для гостей — это уютная атмосфера и любимая ароматная пицца. А для сотрудников — это уважение к каждому, возможность быть услышанным и развитие тех, кто этого хочет. Чтобы команда с удовольствием дарила радость сотням клиентов, мы уделяем внимание ее комфорту. Узнайте подробнее о работе у нас на сайте."
+        },
+        {
+            "id": "3",
+            "name": "Получайте чеки онлайн",
+            "img": "https://cdn.dodostatic.net/static/Img/BonusActionBanners/Gallery/g_1651238923_c0485042856e4d54a5ccbd8ec6cc3301.jpeg",
+            "description": "Вместо бумажных чеков теперь электронные. Посмотреть их можно на сайте в истории заказов. А если хотите получать чеки на электронную почту, укажите адрес в профиле"
+        },
+        {
+            "id": "4",
+            "name": "Поворотный момент",
+            "img": "https://cdn.dodostatic.net/static/Img/BonusActionBanners/Gallery/g_1622432276_59229e58ab644a78b0eb593b7cb937c0.jpeg",
+            "description": "Покупая горячий напиток, вы становитесь участником благотворительной акции и помогаете фонду «Старшие братья Старшие сёстры»."
         }
     ]
 }

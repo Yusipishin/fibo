@@ -14,7 +14,9 @@ interface FoodFormIngredientsProps {
 export const FoodFormIngredients = memo((props: FoodFormIngredientsProps) => {
     const { className, food, setIngredients, ingredients } = props;
 
-    const items = [...food.ingredients.required, ...food.ingredients.optional];
+    const items = food?.ingredients?.required.concat(
+        food?.ingredients?.optional,
+    );
 
     useInitialEffect(() => {
         const newIngredients = [...ingredients, ...items];
