@@ -17,6 +17,10 @@ interface FoodItemProps {
 function FoodItem({ className, food, onShowModal }: FoodItemProps) {
     const { t } = useTranslation();
 
+    const ingredients = food?.ingredients?.required.concat(
+        food?.ingredients?.optional,
+    );
+
     return (
         <VStack
             gap="16"
@@ -31,7 +35,7 @@ function FoodItem({ className, food, onShowModal }: FoodItemProps) {
                     size={TextSize.S}
                     text={
                         food.description ??
-                        food.ingredients.map((food) => food.name).join(', ')
+                        ingredients.map((ingr) => ingr).join(', ')
                     }
                 />
             </VStack>

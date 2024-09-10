@@ -11,12 +11,12 @@ import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
 import cls from './FoodForm.module.scss';
-import { FoodFormPrimaryIngredients } from '../FoodFormPrimaryIngredients/FoodFormPrimaryIngredients';
 import { FoodFormWeight } from '../FoodFormWeight/FoodFormWeight';
 import { FoodFormDough } from '../FoodFormDough/FoodFormDough';
 import { FoodFormAdditionalIngredients } from '../FoodFormAdditionalIngredients/FoodFormAdditionalIngredients';
 import { FoodFormInfo } from '../FoodFormInfo/FoodFormInfo';
 import { Button } from '@/shared/ui/Button';
+import { FoodFormIngredients } from '../FoodFormPrimaryIngredients/FoodFormPrimaryIngredients';
 
 // import { FoodCustomizeReducer } from '../../model/slices/FoodSelectionSlice';
 
@@ -66,7 +66,7 @@ const FoodForm = memo((props: FoodFormProps) => {
                             dough={dough}
                             weight={weight}
                         />
-                        <FoodFormPrimaryIngredients
+                        <FoodFormIngredients
                             ingredients={ingredients}
                             setIngredients={setIngredients}
                             food={food}

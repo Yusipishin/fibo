@@ -38,7 +38,9 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": ["ADMIN"],
+            "roles": [
+                "ADMIN"
+            ],
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": false
@@ -56,7 +58,9 @@
             "id": "2",
             "username": "user",
             "password": "123",
-            "roles": ["USER"],
+            "roles": [
+                "USER"
+            ],
             "features": {
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": true
@@ -74,7 +78,9 @@
             "id": "3",
             "username": "manager",
             "password": "123",
-            "roles": ["MANAGER"],
+            "roles": [
+                "MANAGER"
+            ],
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": true
@@ -92,7 +98,9 @@
             "id": "4",
             "username": "testuser",
             "password": "123",
-            "roles": ["ADMIN"],
+            "roles": [
+                "ADMIN"
+            ],
             "features": {
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": false
@@ -134,168 +142,174 @@
         {
             "id": "1",
             "type": "PIZZA",
-            "name": "Pizza 1",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "name": "Бефстроганов",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EEF9E43DC39C94AA5765DBF1C97100.jpg",
             "sale": {
-                "small": 777,
-                "average": 888,
-                "big": 999
+                "small": 539,
+                "average": 789,
+                "big": 939
             },
             "weight": {
                 "traditional": {
                     "small": 410,
-                    "average": 590,
-                    "big": 810
+                    "average": 570,
+                    "big": 770
                 },
                 "thin": {
-                    "average": 520,
-                    "big": 700
+                    "average": 420,
+                    "big": 680
                 }
             },
-            "ingredients": [
-                {
-                    "name": "Курица",
-                    "necessary": false
-                },
-                {
-                    "name": "Помидоры",
-                    "necessary": true
-                }
-            ]
+            "ingredients": {
+                "required": [
+                    "грибной соус",
+                    "моцарелла",
+                    "фирменный соус альфредо"
+                ],
+                "optional": [
+                    "пряная говядина",
+                    "шампиньоны",
+                    "маринованные огурчики",
+                    "красный лук"
+                ]
+            }
         },
         {
             "id": "2",
             "type": "PIZZA",
-            "name": "Pizza 2",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "name": "Мясная с аджикой",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.jpg",
             "sale": {
-                "small": 429,
-                "average": 649,
-                "big": 769
+                "small": 539,
+                "average": 789,
+                "big": 939
             },
             "weight": {
                 "traditional": {
-                    "small": 410,
-                    "average": 590,
-                    "big": 810
+                    "small": 420,
+                    "average": 610,
+                    "big": 840
                 },
                 "thin": {
                     "average": 520,
-                    "big": 700
+                    "big": 720
                 }
             },
-            "ingredients": [
-                {
-                    "name": "Курица",
-                    "necessary": false
-                },
-                {
-                    "name": "Помидоры",
-                    "necessary": true
-                }
-            ]
+            "ingredients": {
+                "required": [
+                    "острый соус аджика",
+                    "моцарелла",
+                    "фирменный томатный соус"
+                ],
+                "optional": [
+                    "баварские колбаски",
+                    "острые колбаски чоризо",
+                    "цыпленок",
+                    "пикантная пепперони"
+                ]
+            }
         },
         {
             "id": "3",
             "type": "PIZZA",
-            "name": "Pizza 3",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "name": "Креветки со сладким чили",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EEFB595A197C24BA932A0AD1144AFB.jpg",
             "sale": {
-                "small": 429,
-                "average": 649,
-                "big": 769
+                "small": 589,
+                "average": 899,
+                "big": 999
             },
             "weight": {
                 "traditional": {
-                    "small": 410,
-                    "average": 590,
-                    "big": 810
+                    "small": 390,
+                    "average": 630,
+                    "big": 800
                 },
                 "thin": {
-                    "average": 520,
-                    "big": 700
+                    "average": 490,
+                    "big": 710
                 }
             },
-            "ingredients": [
-                {
-                    "name": "Курица",
-                    "necessary": false
-                },
-                {
-                    "name": "Помидоры",
-                    "necessary": true
-                }
-            ]
+            "ingredients": {
+                "required": [
+                    "соус сладкий чили",
+                    "моцарелла",
+                    "фирменный соус альфредо"
+                ],
+                "optional": [
+                    "креветки",
+                    "ананасы",
+                    "сладкий перец"
+                ]
+            }
         },
         {
             "id": "4",
             "type": "PIZZA",
-            "name": "Pizza 4",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "name": "Сырная",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D610D2925109AB2E1C92CC5383C.jpg",
             "sale": {
-                "small": 429,
-                "average": 649,
-                "big": 769
+                "small": 319,
+                "average": 559,
+                "big": 689
             },
             "weight": {
                 "traditional": {
-                    "small": 410,
-                    "average": 590,
-                    "big": 810
+                    "small": 310,
+                    "average": 470,
+                    "big": 640
                 },
                 "thin": {
-                    "average": 520,
-                    "big": 700
+                    "average": 360,
+                    "big": 530
                 }
             },
-            "ingredients": [
-                {
-                    "name": "Курица",
-                    "necessary": false
-                },
-                {
-                    "name": "Помидоры",
-                    "necessary": true
-                }
-            ]
+            "ingredients": {
+                "required": [
+                    "моцарелла",
+                    "сыры чеддер и пармезан",
+                    "фирменный соус альфредо"
+                ],
+                "optional": []
+            }
         },
         {
             "id": "5",
             "type": "PIZZA",
-            "name": "Pizza 5",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "name": "Пепперони фреш",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D612FC7B7FCA5BE822752BEE1E5.jpg",
             "sale": {
-                "small": 429,
-                "average": 649,
-                "big": 769
+                "small": 319,
+                "average": 559,
+                "big": 689
             },
             "weight": {
                 "traditional": {
-                    "small": 410,
+                    "small": 380,
                     "average": 590,
-                    "big": 810
+                    "big": 790
                 },
                 "thin": {
-                    "average": 520,
-                    "big": 700
+                    "average": 490,
+                    "big": 670
                 }
             },
-            "ingredients": [
-                {
-                    "name": "Курица",
-                    "necessary": false
-                },
-                {
-                    "name": "Помидоры",
-                    "necessary": true
-                }
-            ]
+            "ingredients": {
+                "required": [
+                    "увеличенная порция моцареллы",
+                    "фирменный томатный соус"
+                ],
+                "optional": [
+                    "пикантная пепперони",
+                    "томаты"
+                ]
+            }
         },
         {
             "id": "6",
             "type": "PIZZA",
-            "name": "Pizza 6",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg",
+            "name": "Двойной цыпленок",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D614CBE0530B7234B6D7A6E5F8E.jpg",
             "sale": {
                 "small": 429,
                 "average": 649,
@@ -303,25 +317,157 @@
             },
             "weight": {
                 "traditional": {
-                    "small": 410,
-                    "average": 590,
+                    "small": 360,
+                    "average": 520,
+                    "big": 730
+                },
+                "thin": {
+                    "average": 430,
+                    "big": 610
+                }
+            },
+            "ingredients": {
+                "required": [
+                    "моцарелла",
+                    "фирменный соус альфредо"
+                ],
+                "optional": [
+                    "цыпленок"
+                ]
+            }
+        },
+        {
+            "id": "7",
+            "type": "PIZZA",
+            "name": "Ветчина и сыр",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D60FDA22358AC33C6A44EB093A2.jpg",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "weight": {
+                "traditional": {
+                    "small": 320,
+                    "average": 480,
+                    "big": 630
+                },
+                "thin": {
+                    "average": 370,
+                    "big": 550
+                }
+            },
+            "ingredients": {
+                "required": [
+                    "моцарелла",
+                    "фирменный соус альфредо"
+                ],
+                "optional": [
+                    "ветчина"
+                ]
+            }
+        },
+        {
+            "id": "8",
+            "type": "PIZZA",
+            "name": "Чоризо фреш",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61706D472F9A5D71EB94149304.jpg",
+            "sale": {
+                "small": 319,
+                "average": 559,
+                "big": 689
+            },
+            "weight": {
+                "traditional": {
+                    "small": 330,
+                    "average": 470,
+                    "big": 630
+                },
+                "thin": {
+                    "average": 380,
+                    "big": 500
+                }
+            },
+            "ingredients": {
+                "required": [
+                    "моцарелла",
+                    "фирменный томатный соус"
+                ],
+                "optional": [
+                    "острые колбаски чоризо",
+                    "сладкий перец"
+                ]
+            }
+        },
+        {
+            "id": "9",
+            "type": "PIZZA",
+            "name": "Пицца Жюльен",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.jpg",
+            "sale": {
+                "small": 539,
+                "average": 789,
+                "big": 939
+            },
+            "weight": {
+                "traditional": {
+                    "small": 430,
+                    "average": 630,
+                    "big": 820
+                },
+                "thin": {
+                    "average": 510,
+                    "big": 730
+                }
+            },
+            "ingredients": {
+                "required": [
+                    "ароматный грибной соус",
+                    "моцарелла",
+                    "фирменный соус альфредо"
+                ],
+                "optional": [
+                    "цыпленок",
+                    "шампиньоны",
+                    "красный лук",
+                    "чеснок",
+                    "смесь сыров чеддер и пармезан"
+                ]
+            }
+        },
+        {
+            "id": "10",
+            "type": "PIZZA",
+            "name": "Песто",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D613B84A5DBB4C1C50FB9583B7E.jpg",
+            "sale": {
+                "small": 539,
+                "average": 789,
+                "big": 939
+            },
+            "weight": {
+                "traditional": {
+                    "small": 400,
+                    "average": 610,
                     "big": 810
                 },
                 "thin": {
-                    "average": 520,
-                    "big": 700
+                    "average": 490,
+                    "big": 740
                 }
             },
-            "ingredients": [
-                {
-                    "name": "Курица",
-                    "necessary": false
-                },
-                {
-                    "name": "Помидоры",
-                    "necessary": true
-                }
-            ]
+            "ingredients": {
+                "required": [
+                    "соус песто",
+                    "моцарелла",
+                    "фирменный соус альфредо"
+                ],
+                "optional": [
+                    "цыпленок",
+                    "кубики брынзы",
+                    "томаты"
+                ]
+            }
         }
     ],
     "additional-ingredients": [
@@ -335,7 +481,7 @@
             }
         },
         {
-            "name": "Сливочная моцарелла",
+            "name": "Моцарелла",
             "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
             "sale": {
                 "small": 89,
@@ -362,8 +508,143 @@
             }
         },
         {
-            "name": "Сливочная моцарелла",
-            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+            "name": "Креветки",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/11eee5d51d4c576da0f0db611c8947bd.png",
+            "sale": {
+                "small": 199,
+                "average": 219,
+                "big": 239
+            }
+        },
+        {
+            "name": "Сыры чеддер и пармезан",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Острый перец халапеньо",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Нежный цыпленок",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA5B328D35A",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Шампиньоны",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA67259A324",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Бекон",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA637AAB68F",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Ветчина",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA61B9A8D61",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Пикантная пепперони",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA6258199C3",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Маринованные огурчики",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A21DA51A81211E9EA89958D782B",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Свежие томаты",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA7AC1A1D67",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Красный лук",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA60AE6464C",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Сочные ананасы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A21DA51A81211E9AFA6795BA2A0",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Итальянские травы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/370dac9ed21e4bffaf9bc2618d258734.png",
+            "sale": {
+                "small": 49,
+                "average": 59,
+                "big": 79
+            }
+        },
+        {
+            "name": "Сладкий перец",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA63F774C1B",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "name": "Кубики брынзы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA6B0FFC349",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "name": "Митболы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/b2f3a5d5afe44516a93cfc0d2ee60088.png",
             "sale": {
                 "small": 89,
                 "average": 99,
@@ -375,52 +656,142 @@
         {
             "id": "1",
             "type": "SNACK",
-            "name": "Snack 1",
-            "description": "Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1Описание для snack 1",
-            "weight": 200,
-            "portion": "10 шт",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
-            "sale": 189
+            "name": "Паста с креветками",
+            "description": "Паста из печи с креветками, томатами, моцареллой, соусом альфредо и чесноком",
+            "weight": 300,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EEFAF3EBF5FBE38A44307BB6788AA0.jpg",
+            "sale": 379
         },
         {
             "id": "2",
             "type": "SNACK",
-            "name": "Snack 2",
-            "description": "Описание для snack 2",
-            "weight": 200,
-            "portion": "10 шт",
+            "name": "Дэнвич ветчина и сыр",
+            "description": "Поджаристая чиабатта и знакомое сочетание ветчины, цыпленка, моцареллы со свежими томатами, соусом ранч и чесноком",
+            "weight": 210,
+            "portion": "1 шт",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
-            "sale": 189
+            "sale": 259
         },
         {
             "id": "3",
             "type": "SNACK",
-            "name": "Snack 3",
-            "description": "Описание для snack 3",
-            "weight": 200,
-            "portion": "10 шт",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
-            "sale": 189
+            "name": "Дэнвич чоризо барбекю",
+            "description": "Насыщенный вкус острых колбасок чоризо и пикантной пепперони с соусами бургер и барбекю, свежими томатами, маринованными огурчиками, моцареллой и луком в румяной чиабатте",
+            "weight": 210,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF041FE1F94C903576DCFD01E.jpg",
+            "sale": 259
         },
         {
             "id": "4",
             "type": "SNACK",
-            "name": "Snack 4",
-            "description": "Описание для snack 4",
-            "weight": 200,
-            "portion": "10 шт",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
-            "sale": 189
+            "name": "Паста Карбонара",
+            "description": "Паста из печи с беконом, сырами чеддер и пармезан, томатами, моцареллой, фирменным соусом альфредо и чесноком",
+            "weight": 350,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE797018746EF899D162D16FA99625.jpg",
+            "sale": 359
         },
         {
             "id": "5",
             "type": "SNACK",
-            "name": "Snack 5",
-            "description": "Описание для snack 5",
-            "weight": 200,
-            "portion": "10 шт",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.jpg",
+            "name": "Паста Мясная",
+            "description": "Паста из печи с митболами, соусом бургер, моцареллой, фирменным томатным соусом и чесноком",
+            "weight": 330,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE797018D60B9B8D278F668BD4D3C7.jpg",
+            "sale": 359
+        },
+        {
+            "id": "6",
+            "type": "SNACK",
+            "name": "Паста Песто",
+            "description": "Паста из печи с соусом песто, цыпленком, томатами, моцареллой и фирменным томатным соусом",
+            "weight": 330,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE797019062658A437457F8E1D5887.jpg",
+            "sale": 359
+        },
+        {
+            "id": "7",
+            "type": "SNACK",
+            "name": "Супермясной Додстер",
+            "description": "Горячая закуска с цыпленком, моцареллой, митболами, острыми колбасками чоризо и соусом бургер в тонкой пшеничной лепешке",
+            "weight": 160,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE797022F9AD72AC34E1B01DC6AEBA.jpg",
+            "sale": 219
+        },
+        {
+            "id": "8",
+            "type": "SNACK",
+            "name": "Додстер с ветчиной",
+            "description": "Горячий завтрак с ветчиной, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
+            "weight": 160,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7970259D888E98B6407EE6B994D9.jpg",
+            "sale": 179
+        },
+        {
+            "id": "9",
+            "type": "SNACK",
+            "name": "Додстер",
+            "description": "Легендарная горячая закуска с цыпленком, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
+            "weight": 210,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796F96D11392A2F6DD73599921B9.jpg",
+            "sale": 179
+        },
+        {
+            "id": "10",
+            "type": "SNACK",
+            "name": "Острый Додстер",
+            "description": "Горячая закуска с цыпленком, перчиком халапеньо, маринованными огурчиками, томатами, моцареллой и соусом барбекю в тонкой пшеничной лепешке",
+            "weight": 190,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FD3B594068F7A752DF8161D04.jpg",
             "sale": 189
+        },
+        {
+            "id": "11",
+            "type": "SNACK",
+            "name": "Грибной Стартер",
+            "description": "Горячая закуска с шампиньонами, моцареллой и соусом ранч в тонкой пшеничной лепешке",
+            "weight": 150,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FA7D001D3B7935A2D37DEC991.jpg",
+            "sale": 179
+        },
+        {
+            "id": "12",
+            "type": "SNACK",
+            "name": "Куриные наггетсы",
+            "description": "Нежное куриное мясо в хрустящей панировке",
+            "weight": 220,
+            "portion": "10 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EEF45EAE27E22D8E3176ABF5FEFF44.jpg",
+            "sale": 269
+        },
+        {
+            "id": "13",
+            "type": "SNACK",
+            "name": "Картофель из печи",
+            "description": "Запеченная в печи картошечка — привычный вкус и мало масла. В составе пряные специи",
+            "weight": 150,
+            "portion": "Большая",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EED646B8E7AF98BD1876F2FFE1663A.jpg",
+            "sale": 249
+        },
+        {
+            "id": "14",
+            "type": "SNACK",
+            "name": "Салат Цезарь",
+            "description": "Цыпленок, свежие листья салата айсберг, томаты черри, сыры чеддер и пармезан, соус цезарь, пшеничные гренки, итальянские травы",
+            "weight": 170,
+            "portion": "1 шт",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FDD01CFF881F55E7082101AD8.jpg",
+            "sale": 290
         }
     ],
     "drinks": [
@@ -428,70 +799,98 @@
             "id": "1",
             "type": "DRINK",
             "name": "Какао",
-            "description": "Отправляемся",
+            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
             "portion": "0,3 л",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.jpg",
-            "sale": 189
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE79702DC5EA0EBF92E2483DB89B11.jpg",
+            "sale": 129
         },
         {
             "id": "2",
             "type": "DRINK",
-            "name": "Напиток 2",
-            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
+            "name": "Добрый Кола Малина",
+            "description": "",
             "portion": "0,5 л",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.jpg",
-            "sale": 189
+            "img": "https://media.dodostatic.net/image/r:292x292/11EECF75D8792640A28A2BEF37367897.jpg",
+            "sale": 129
         },
         {
             "id": "3",
             "type": "DRINK",
-            "name": "Напиток 3",
-            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
+            "name": "Апельсиновый сок Rich",
+            "description": "",
+            "portion": "1 л",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B223E75EB71498BCAA0D4A0D.jpg",
+            "sale": 209
+        },
+        {
+            "id": "4",
+            "type": "DRINK",
+            "name": "Морс Клюква",
+            "description": "Эта ягода хитра! Наш фирменный морс для любителей сладкой кислинки. Дизайн товара может отличаться",
+            "portion": "0,45 л",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EECF75072BD81390B9C29DD01666C3.jpg",
+            "sale": 145
+        },
+        {
+            "id": "5",
+            "type": "DRINK",
+            "name": "Rich Tea Черный с лимоном",
+            "description": "",
             "portion": "0,5 л",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.jpg",
-            "sale": 189
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61AD5C2FCFBBBB6AA525E38A04.jpg",
+            "sale": 129
         }
     ],
     "desserts": [
         {
             "id": "1",
             "type": "DESSERT",
-            "sale": 189,
+            "sale": 135,
             "portion": "1 шт",
-            "weight": 120,
-            "name": "Маффин Три шоколада 1",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
-            "description": "Маффин Три шоколада 1"
+            "weight": 90,
+            "name": "Сорбет Лимонный фреш",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EF02702EEF6FD9BB2AB771DB0535BD.jpg",
+            "description": "Цитрусовая свежесть в стаканчике. Сладкий вкус с приятной кислинкой"
         },
         {
             "id": "2",
             "type": "DESSERT",
-            "sale": 189,
+            "sale": 169,
             "portion": "1 шт",
-            "weight": 120,
-            "name": "Маффин Три шоколада 2",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
-            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+            "weight": 100,
+            "name": "Чизкейк Нью-Йорк с кокосом",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE79700C641CDFA7205D59209744E3.jpg",
+            "description": "Это не классический творожный чизкейк, а похож! Это его нежный брат близнец с новым кокосовым вкусом"
         },
         {
             "id": "3",
             "type": "DESSERT",
-            "sale": 189,
+            "sale": 109,
             "portion": "1 шт",
             "weight": 120,
-            "name": "Маффин Три шоколада 3",
+            "name": "Маффин Три шоколада",
             "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
             "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
         },
         {
             "id": "4",
             "type": "DESSERT",
-            "sale": 189,
-            "portion": "1 шт",
-            "weight": 120,
-            "name": "Маффин Три шоколада 4",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE796FB18AFBBEBF188C25EBD2E581.jpg",
-            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+            "sale": 335,
+            "portion": "4 шт",
+            "weight": 270,
+            "name": "Сырники с малиновым вареньем",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B7DE873C82A72DB3BE601BD4.jpg",
+            "description": "Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство"
+        },
+        {
+            "id": "5",
+            "type": "DESSERT",
+            "sale": 225,
+            "portion": "16 шт",
+            "weight": 210,
+            "name": "Рулетики с корицей",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61B679E058AEC6DC063470AFB2.jpg",
+            "description": "Десерт, одобренный нашими бабушками. Горячие сладкие рулетики с пряной корицей и сахаром"
         }
     ]
 }

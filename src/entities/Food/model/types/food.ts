@@ -24,9 +24,9 @@ export interface Weight {
     thin: ThinDoughWeight;
 }
 
-interface PrimaryIngredient {
-    name: string;
-    necessary: false;
+interface Ingredients {
+    required: string[];
+    optional: string[];
 }
 
 export interface AdditionalIngredient {
@@ -42,7 +42,7 @@ export interface Pizza {
     name: string;
     sale: Sale;
     weight: Weight;
-    ingredients: PrimaryIngredient[];
+    ingredients: Ingredients;
 }
 
 export interface Drink {
