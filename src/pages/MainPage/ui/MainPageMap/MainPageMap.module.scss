@@ -1,0 +1,36 @@
+.MainPageMap {
+    background: var(--inverted-bg-color);
+}
+
+.map {
+    border-radius: var(--border-m-radius);
+}
+
+.container {
+    padding: 65px 0;
+}
+
+.list {
+    margin: 65px 0 35px;
+}
+
+.item {
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    padding: 40px 20px 30px;
+    border-radius: var(--border-m-radius);
+    background: var(--bg-color);
+}
+
+.iconWrapper {
+    top: -25%;
+    padding: 16px;
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: var(--border-half-radius);
+}
+
+.text {
+    z-index: var(--text-z-index);
+}

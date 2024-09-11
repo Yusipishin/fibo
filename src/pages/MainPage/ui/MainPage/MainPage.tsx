@@ -4,6 +4,7 @@ import { AllFoodProps, FoodPath } from '@/entities/Food';
 import { Page } from '@/widgets/Page';
 import { MainPageSlider } from '../MainPageSlider/MainPageSlider';
 import { FoodList, FoodModal } from '@/features/FoodSelection';
+import { MainPageMap } from '../MainPageMap/MainPageMap';
 
 const foodLists: { title: string; path: FoodPath }[] = [
     {
@@ -48,6 +49,7 @@ const MainPage = memo(() => {
                     onShowModal={onShowModal}
                 />
             ))}
+            <MainPageMap />
             <FoodModal
                 food={food as AllFoodProps}
                 isOpen={isFoodModal}
