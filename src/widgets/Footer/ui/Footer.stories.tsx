@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import FoodItem from './FoodItem';
+import { Footer } from './Footer';
 
-const meta: Meta<typeof FoodItem> = {
-    component: FoodItem,
-    title: 'shared/FoodItem',
+const meta: Meta<typeof Footer> = {
+    component: Footer,
+    title: 'shared/Footer',
 };
 export default meta;
 

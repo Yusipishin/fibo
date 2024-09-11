@@ -29,11 +29,7 @@ export const Tabs = memo((props: TabsProps) => {
         <div className={classNames(cls.Tabs, {}, [className])}>
             {tabs.map((tab) => (
                 <Card
-                    theme={
-                        tab.value === value
-                            ? CardTheme.NORMAL
-                            : CardTheme.INVERTED
-                    }
+                    theme={tab.value === value && CardTheme.OUTLINE}
                     key={tab.value}
                     className={cls.tab}
                     onClick={clickHandle(tab)}

@@ -11,14 +11,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
     },
 };
 
 export const Error: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
         theme: 'error',
     },
@@ -26,7 +26,7 @@ export const Error: Story = {
 
 export const OnlyTitle: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
     },
 };
 
@@ -38,7 +38,7 @@ export const OnlyText: Story = {
 
 export const SizeL: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
         size: TextSize.L,
     },
@@ -46,7 +46,7 @@ export const SizeL: Story = {
 
 export const SizeM: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
         size: TextSize.M,
     },
@@ -54,7 +54,7 @@ export const SizeM: Story = {
 
 export const SizeS: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
         size: TextSize.S,
     },
@@ -62,7 +62,7 @@ export const SizeS: Story = {
 
 export const SizeXL: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
         size: TextSize.XL,
     },
@@ -70,7 +70,7 @@ export const SizeXL: Story = {
 
 export const SizeXS: Story = {
     args: {
-        title: 'Main Title',
+        // title: 'Main Title',
         text: 'Random text text text text',
         size: TextSize.XS,
     },

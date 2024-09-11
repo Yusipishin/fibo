@@ -3,11 +3,7 @@ import { memo, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './AppLink.module.scss';
 
-export enum AppLinkTheme {
-    PRIMARY = 'primary',
-    SECONDARY = 'secondary',
-    THIRD = 'third',
-}
+type AppLinkTheme = 'primary' | 'secondary' | 'third' | 'outline';
 
 interface AppLinkProps extends LinkProps {
     className?: string;
@@ -16,13 +12,7 @@ interface AppLinkProps extends LinkProps {
 }
 
 export const AppLink = memo((props: AppLinkProps) => {
-    const {
-        to,
-        className,
-        children,
-        theme = AppLinkTheme.PRIMARY,
-        ...otherProps
-    } = props;
+    const { to, className, children, theme = 'primary', ...otherProps } = props;
 
     return (
         <Link

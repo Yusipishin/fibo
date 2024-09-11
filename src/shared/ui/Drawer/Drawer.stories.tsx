@@ -12,9 +12,9 @@ type Story = StoryObj<typeof meta>;
 
 const content = (
     <>
-        <Text title="Notification 1" />
-        <Text title="Notification 2" />
-        <Text title="Notification 3" />
+        <Text text="Notification 1" />
+        <Text text="Notification 2" />
+        <Text text="Notification 3" />
     </>
 );
 

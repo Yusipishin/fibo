@@ -11,6 +11,7 @@ import { Text, TextSize } from '@/shared/ui/Text';
 import { Skeleton } from '@/shared/ui/Skeleton';
 import { Icon } from '@/shared/ui/Icon';
 import cls from './HeaderTop.module.scss';
+import { PHONE_NUMBER } from '@/shared/const/telephone';
 
 interface HeaderTopProps {
     className?: string;
@@ -59,7 +60,7 @@ export const HeaderTop = memo((props: HeaderTopProps) => {
                 <Button className={cls.callBtn} theme="inverted">
                     {t('Заказать звонок')}
                 </Button>
-                <AppLink to="tel:8 499 391-84-49">
+                <AppLink to={`tel:${PHONE_NUMBER}`}>
                     <Text
                         theme="accent"
                         size={TextSize.L}

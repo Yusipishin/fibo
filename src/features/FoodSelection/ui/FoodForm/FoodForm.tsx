@@ -1,22 +1,22 @@
 import { memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { AppImage } from '@/shared/ui/AppImage/AppImage';
+import { Button } from '@/shared/ui/Button';
+import { HStack, VStack } from '@/shared/ui/Stack';
+import { Text, TextSize } from '@/shared/ui/Text';
 import {
     AllFoodProps,
     FoodType,
     PizzaDough,
     PizzaWeight,
 } from '@/entities/Food';
-import { AppImage } from '@/shared/ui/AppImage/AppImage';
-import { HStack, VStack } from '@/shared/ui/Stack';
-import { Text, TextSize } from '@/shared/ui/Text';
-import cls from './FoodForm.module.scss';
-import { FoodFormWeight } from '../FoodFormWeight/FoodFormWeight';
-import { FoodFormDough } from '../FoodFormDough/FoodFormDough';
 import { FoodFormAdditionalIngredients } from '../FoodFormAdditionalIngredients/FoodFormAdditionalIngredients';
+import { FoodFormDough } from '../FoodFormDough/FoodFormDough';
 import { FoodFormInfo } from '../FoodFormInfo/FoodFormInfo';
-import { Button } from '@/shared/ui/Button';
-import { FoodFormIngredients } from '../FoodFormPrimaryIngredients/FoodFormPrimaryIngredients';
+import { FoodFormIngredients } from '../FoodFormIngredients/FoodFormIngredients';
+import { FoodFormWeight } from '../FoodFormWeight/FoodFormWeight';
+import cls from './FoodForm.module.scss';
 
 export interface FoodFormProps {
     food: AllFoodProps;
