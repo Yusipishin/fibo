@@ -1,26 +1,18 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import MastercardIcon from '@/shared/assets/img/icons/mastercard-ic.svg';
-import FacebookIcon from '@/shared/assets/img/icons/messengers/fb-ic.svg';
-import FacebookMessengerIcon from '@/shared/assets/img/icons/messengers/fbm-ic.svg';
-import SkypeIcon from '@/shared/assets/img/icons/messengers/skype-ic.svg';
-import TelegramIcon from '@/shared/assets/img/icons/messengers/tg-ic.svg';
-import ViberIcon from '@/shared/assets/img/icons/messengers/viber-ic.svg';
-import VkIcon from '@/shared/assets/img/icons/messengers/vk-ic.svg';
-import PaypalIcon from '@/shared/assets/img/icons/paypal-ic.svg';
-import VisaIcon from '@/shared/assets/img/icons/visa-ic.svg';
-import Logo from '@/shared/assets/img/logo.png';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { AppLink } from '@/shared/ui/AppLink';
 import { Container } from '@/shared/ui/Container';
-import { Icon } from '@/shared/ui/Icon';
 import { Skeleton } from '@/shared/ui/Skeleton';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
-import cls from './Footer.module.scss';
 import { Button } from '@/shared/ui/Button';
 import { PHONE_NUMBER } from '@/shared/const/telephone';
+import Logo from '@/shared/assets/img/logo.png';
+import cls from './Footer.module.scss';
+import { messengersIcons, paymentIcons } from '../model/consts/icons';
+import { Icon } from '@/shared/ui/Icon';
 
 interface FooterProps {
     className?: string;
@@ -70,58 +62,26 @@ export const Footer = memo((props: FooterProps) => {
                     </HStack>
                     <HStack max justify="between">
                         <Text text={t('YaBao Все права защищены © 2024')} />
-                        <HStack>
-                            <Icon Svg={VisaIcon} />
-                            <Icon Svg={PaypalIcon} />
-                            <Icon Svg={MastercardIcon} />
+                        <HStack gap="16">
+                            {paymentIcons.map((Item, i) => (
+                                <Icon key={i} Svg={Item} />
+                            ))}
                         </HStack>
                     </HStack>
                 </VStack>
                 <VStack>
                     <Text text={t('ОСТАЛИСЬ ВОПРОСЫ? А МЫ ВСЕГДА НА СВЯЗИ:')} />
                     <div className={cls.messengers}>
-                        <AppLink
-                            to="/"
-                            theme="outline"
-                            className={cls.messenger1}
-                        >
-                            <Icon Svg={ViberIcon} />
-                        </AppLink>
-                        <AppLink
-                            to="/"
-                            theme="outline"
-                            className={cls.messenger2}
-                        >
-                            <Icon Svg={FacebookIcon} />
-                        </AppLink>
-                        <AppLink
-                            to="/"
-                            theme="outline"
-                            className={cls.messenger3}
-                        >
-                            <Icon Svg={FacebookMessengerIcon} />
-                        </AppLink>
-                        <AppLink
-                            to="/"
-                            theme="outline"
-                            className={cls.messenger4}
-                        >
-                            <Icon Svg={SkypeIcon} />
-                        </AppLink>
-                        <AppLink
-                            to="/"
-                            theme="outline"
-                            className={cls.messenger5}
-                        >
-                            <Icon Svg={TelegramIcon} />
-                        </AppLink>
-                        <AppLink
-                            to="/"
-                            theme="outline"
-                            className={cls.messenger6}
-                        >
-                            <Icon Svg={VkIcon} />
-                        </AppLink>
+                        {messengersIcons.map((Item, i) => (
+                            <AppLink
+                                to="/"
+                                key={i}
+                                theme="outline"
+                                className={cls.messenger}
+                            >
+                                <Icon Svg={Item} />
+                            </AppLink>
+                        ))}
                         <AppLink
                             to="/"
                             theme="outline"
