@@ -1,0 +1,16 @@
+.AuthForm {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.authBtn {
+    margin-top: 15px;
+    margin-left: auto;
+}

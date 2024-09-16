@@ -26,6 +26,7 @@ export interface FoodFormProps {
 
 const FoodForm = memo((props: FoodFormProps) => {
     const { t } = useTranslation();
+    // const dispatch = useAppDispatch();
     const { className, food, isOpen } = props;
 
     const [price, setPrice] = useState(0);
@@ -43,6 +44,15 @@ const FoodForm = memo((props: FoodFormProps) => {
             setIngredients([]);
         }
     }, [food.sale, isOpen]);
+
+    // const handleAddBtn = () => useCallback({
+    //     if (userInited) {
+
+    //     } else {
+    //         ...
+    //     }
+    //     // dispatch(cartActions.add())
+    // }, []);
 
     return (
         <HStack className={classNames(cls.FoodForm, {}, [className])}>
@@ -92,11 +102,12 @@ const FoodForm = memo((props: FoodFormProps) => {
                 )}
 
                 <Button
+                    max
+                    theme="accent"
+                    // onClick={handleAddBtn}
                     className={classNames(cls.addBtn, {}, [
                         food.type === FoodType.PIZZA && cls.shadowTop,
                     ])}
-                    max
-                    theme="accent"
                 >
                     {t('Добавить в корзину ') + price}
                 </Button>

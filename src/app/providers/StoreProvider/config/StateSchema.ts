@@ -9,6 +9,7 @@ import { CombinedState } from 'redux';
 import { UserSchema } from '@/entities/User';
 import { ScrollbarSchema } from '@/features/Scrollbar';
 import { rtkApi } from '@/shared/api/rtkApi';
+import { AuthSchema } from '@/features/AuthByUsername';
 
 export interface StateSchema {
     user: UserSchema;
@@ -16,6 +17,7 @@ export interface StateSchema {
     [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
 
     // Асинхронные редюсеры
+    authForm?: AuthSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;

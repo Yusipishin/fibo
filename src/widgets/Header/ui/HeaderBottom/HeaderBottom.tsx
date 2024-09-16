@@ -1,6 +1,6 @@
-import { memo } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import cls from './HeaderBottom.module.scss';
+import { useSelector } from 'react-redux';
 import { HStack } from '@/shared/ui/Stack';
 import { Button } from '@/shared/ui/Button';
 import { AppLink } from '@/shared/ui/AppLink';
@@ -9,6 +9,9 @@ import Logo from '@/shared/assets/img/logo.png';
 import { Skeleton } from '@/shared/ui/Skeleton';
 import { Text } from '@/shared/ui/Text';
 import { CartSidebarButton } from '@/features/Cart';
+import { getUserAuthData } from '@/entities/User';
+import { AuthModal } from '@/features/AuthByUsername';
+import { Avatar } from '@/shared/ui/Avatar';
 
 interface HeaderBottomProps {
     scrolled?: boolean;
@@ -30,6 +33,34 @@ export const navLinks: Record<string, string> = {
 
 export const HeaderBottom = memo(({ scrolled }: HeaderBottomProps) => {
     const { t } = useTranslation();
+    const [isAuthModal, setIsAuthModal] = useState(false);
+    const authData = useSelector(getUserAuthData);
+    console.log(authData);
+
+    const onCloseModal = useCallback(() => {
+        setIsAuthModal(false);
+    }, []);
+
+    const onShowModal = useCallback(() => {
+        setIsAuthModal(true);
+    }, []);
+
+    const authBtn = () => {
+        if (authData) {
+            return (
+                <Avatar
+                    size={50}
+                    alt={authData?.username}
+                    src={authData?.profile?.avatar}
+                />
+            );
+        }
+        return (
+            <Button onClick={onShowModal}>
+                <Text theme="secondary" text={t('Войти')} />
+            </Button>
+        );
+    };
 
     return (
         <HStack max justify="between" gap="32">
@@ -42,7 +73,7 @@ export const HeaderBottom = memo(({ scrolled }: HeaderBottomProps) => {
                     />
                 </AppLink>
             )}
-            <HStack className={cls.navList} gap="16">
+            <HStack gap="16">
                 {Object.keys(navLinks).map((key) => (
                     <AppLink key={key} to={navLinks[key]}>
                         {t(key)}
@@ -50,10 +81,9 @@ export const HeaderBottom = memo(({ scrolled }: HeaderBottomProps) => {
                 ))}
             </HStack>
             <HStack gap="32">
-                {!scrolled && (
-                    <Button className={cls.login}>
-                        <Text theme="secondary" text={t('Войти')} />
-                    </Button>
+                {!scrolled && authBtn()}
+                {isAuthModal && (
+                    <AuthModal isOpen={isAuthModal} onClose={onCloseModal} />
                 )}
                 <CartSidebarButton />
             </HStack>

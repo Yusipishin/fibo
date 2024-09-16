@@ -1,19 +1,17 @@
 import { memo } from 'react';
-import { AllFoodProps, FoodListWrapper, FoodPath } from '@/entities/Food';
+import { AllFoodProps, FoodList, FoodPath } from '@/entities/Food';
 import { useGetList } from '@/shared/lib/hooks/useGetList/useGetList';
-import { VStack } from '@/shared/ui/Stack';
 import { Container } from '@/shared/ui/Container';
 
-interface FoodListProps {
+interface FoodInfiniteListProps {
     title: string;
     endpoint: FoodPath;
     className?: string;
     onShowModal?: (food: AllFoodProps) => void;
 }
 
-export const FoodList = memo((props: FoodListProps) => {
+export const FoodInfiniteList = memo((props: FoodInfiniteListProps) => {
     const { className, endpoint, title, onShowModal } = props;
-
     const {
         data: foods,
         isError,
@@ -22,15 +20,14 @@ export const FoodList = memo((props: FoodListProps) => {
 
     return (
         <Container>
-            <VStack max className={className}>
-                <FoodListWrapper
-                    foods={foods}
-                    title={title}
-                    isError={isError}
-                    isLoading={isLoading}
-                    onShowModal={onShowModal}
-                />
-            </VStack>
+            <FoodList
+                foods={foods}
+                title={title}
+                isError={isError}
+                className={className}
+                isLoading={isLoading}
+                onShowModal={onShowModal}
+            />
         </Container>
     );
 });

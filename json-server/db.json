@@ -39,12 +39,8 @@
             "username": "admin",
             "password": "123",
             "roles": ["ADMIN"],
-            "features": {
-                "isArticleRatingEnabled": false,
-                "isCounterEnabled": false
-            },
             "profile": {
-                "first": "Алексейa",
+                "firstname": "Алексейa",
                 "lastname": "Юсипишинr",
                 "age": 19,
                 "country": "Russia",
@@ -57,12 +53,8 @@
             "username": "user",
             "password": "123",
             "roles": ["USER"],
-            "features": {
-                "isArticleRatingEnabled": true,
-                "isCounterEnabled": true
-            },
             "profile": {
-                "first": "Алекс",
+                "firstname": "Алекс",
                 "lastname": "Юсипишин",
                 "age": 19,
                 "country": "Belarus",
@@ -75,12 +67,8 @@
             "username": "manager",
             "password": "123",
             "roles": ["MANAGER"],
-            "features": {
-                "isArticleRatingEnabled": false,
-                "isCounterEnabled": true
-            },
             "profile": {
-                "first": "Test",
+                "firstname": "Test",
                 "lastname": "User",
                 "age": 29,
                 "country": "Belarus",
@@ -93,12 +81,8 @@
             "username": "testuser",
             "password": "123",
             "roles": ["ADMIN"],
-            "features": {
-                "isArticleRatingEnabled": true,
-                "isCounterEnabled": false
-            },
             "profile": {
-                "first": "Test",
+                "firstname": "Test",
                 "lastname": "User",
                 "age": 29,
                 "country": "Belarus",
@@ -112,17 +96,19 @@
             "id": "1",
             "list": [
                 {
-                    "id": "1",
                     "count": 1,
                     "price": 700,
+                    "dough": "Традиционное",
+                    "weight": "Маленькая",
                     "name": "С креветками и трюфелями",
                     "description": "Курица, Курица, Курица, Сырный бортик, Сливочная моцарелла",
                     "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
                 },
                 {
-                    "id": "2",
                     "count": 2,
                     "price": 300,
+                    "dough": "Традиционное",
+                    "weight": "Маленькая",
                     "name": "С креветками и трюфелями",
                     "description": "Курица, Курица",
                     "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"

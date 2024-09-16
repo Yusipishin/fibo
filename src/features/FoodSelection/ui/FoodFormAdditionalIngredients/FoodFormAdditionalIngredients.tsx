@@ -23,7 +23,9 @@ interface FoodFormAdditionalIngredientsProps {
 }
 
 const getSkeletons = () =>
-    new Array(6).fill(0).map(() => <Skeleton height={150} width={110} />);
+    new Array(6)
+        .fill(0)
+        .map((_, i) => <Skeleton key={i} height={150} width={110} />);
 
 export const FoodFormAdditionalIngredients = memo(
     (props: FoodFormAdditionalIngredientsProps) => {

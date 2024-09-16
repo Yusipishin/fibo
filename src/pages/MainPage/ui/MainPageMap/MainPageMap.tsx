@@ -24,8 +24,8 @@ export const MainPageMap = memo((props: MainPageMapProps) => {
                     title={{ txt: 'Оплата и доставка', tag: 'h2' }}
                 />
                 <HStack gap="32" className={cls.list} justify="between">
-                    {mapIcons.map((icon) => (
-                        <VStack align="center" className={cls.item}>
+                    {mapIcons.map((icon, i) => (
+                        <VStack key={i} align="center" className={cls.item}>
                             <div className={cls.iconWrapper}>
                                 <Icon Svg={icon.Svg} />
                             </div>

@@ -1,2 +1,2 @@
-export { FoodList } from './ui/FoodList/FoodList';
+export { FoodInfiniteList } from './ui/FoodInfiniteList/FoodInfiniteList';
 export { FoodModal } from './ui/FoodModal/FoodModal';

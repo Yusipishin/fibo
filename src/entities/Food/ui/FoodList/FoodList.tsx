@@ -5,10 +5,10 @@ import { HStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
 import { AllFoodProps } from '../../model/types/food';
 import FoodItem from '../FoodItem/FoodItem';
-import cls from './FoodListWrapper.module.scss';
+import cls from './FoodList.module.scss';
 import { Skeleton } from '@/shared/ui/Skeleton';
 
-interface FoodListWrapperProps {
+interface FoodListProps {
     title: string;
     isError?: boolean;
     isLoading?: boolean;
@@ -18,9 +18,11 @@ interface FoodListWrapperProps {
 }
 
 const getSkeletons = () =>
-    new Array(6).fill(0).map(() => <Skeleton width={250} height={360} />);
+    new Array(6)
+        .fill(0)
+        .map((_, i) => <Skeleton key={i} width={250} height={360} />);
 
-export const FoodListWrapper = memo((props: FoodListWrapperProps) => {
+export const FoodList = memo((props: FoodListProps) => {
     const { t } = useTranslation();
     const { className, title, foods, isLoading, isError, onShowModal } = props;
 

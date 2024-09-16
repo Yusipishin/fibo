@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { FoodList } from './FoodList';
+import { FoodInfiniteList } from './FoodInfiniteList';
 
-const meta: Meta<typeof FoodList> = {
-    component: FoodList,
+const meta: Meta<typeof FoodInfiniteList> = {
+    component: FoodInfiniteList,
     title: 'shared/FoodLists',
 };
 export default meta;
