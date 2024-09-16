@@ -11,7 +11,7 @@ import { Text } from '@/shared/ui/Text';
 import { CartSidebarButton } from '@/features/Cart';
 import { getUserAuthData } from '@/entities/User';
 import { AuthModal } from '@/features/AuthByUsername';
-import { Avatar } from '@/shared/ui/Avatar';
+import { AvatarDropdown } from '@/features/avatarDropdown';
 
 interface HeaderBottomProps {
     scrolled?: boolean;
@@ -47,13 +47,7 @@ export const HeaderBottom = memo(({ scrolled }: HeaderBottomProps) => {
 
     const authBtn = () => {
         if (authData) {
-            return (
-                <Avatar
-                    size={50}
-                    alt={authData?.username}
-                    src={authData?.profile?.avatar}
-                />
-            );
+            return <AvatarDropdown />;
         }
         return (
             <Button onClick={onShowModal}>
