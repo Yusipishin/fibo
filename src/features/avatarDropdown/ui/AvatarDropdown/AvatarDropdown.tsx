@@ -61,7 +61,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                 <Avatar
                     size={50}
                     alt={authData?.username}
-                    src={authData?.profile?.avatar}
+                    src={authData?.avatar}
                 />
             }
         />

@@ -73,6 +73,7 @@ export const FoodFormAdditionalIngredients = memo(
 
                     return (
                         <Button
+                            key={ingr.img}
                             theme="outline"
                             onClick={handleClick(ingr.name)}
                             className={classNames(cls.addIngr, {

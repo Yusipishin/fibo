@@ -10,6 +10,7 @@ import { UserSchema } from '@/entities/User';
 import { ScrollbarSchema } from '@/features/Scrollbar';
 import { rtkApi } from '@/shared/api/rtkApi';
 import { AuthSchema } from '@/features/AuthByUsername';
+import { ProfileSchema } from '@/features/EditableProfileCard';
 
 export interface StateSchema {
     user: UserSchema;
@@ -18,6 +19,7 @@ export interface StateSchema {
 
     // Асинхронные редюсеры
     authForm?: AuthSchema;
+    profile?: ProfileSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;

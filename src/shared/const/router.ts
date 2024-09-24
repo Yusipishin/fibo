@@ -2,6 +2,8 @@ export enum AppRoutes {
     MAIN = 'main',
     ADMIN_PANEL = 'admin_panel',
     FORBIDDEN = 'forbidden',
+    PROFILE = 'profile',
+
     // last
     NOT_FOUND = 'not_found',
 }
