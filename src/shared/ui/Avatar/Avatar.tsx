@@ -2,7 +2,7 @@ import { CSSProperties, useMemo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Avatar.module.scss';
 import { AppImage } from '../AppImage/AppImage';
-import TestIcon from '../../assets/tests/test-icon.svg';
+import BaseAvatarIcon from '../../assets/img/icons/avatar-ic.svg';
 import { Icon } from '../Icon';
 import { Skeleton } from '../Skeleton';
 
@@ -32,7 +32,7 @@ export const Avatar = (props: AvatarProps) => {
             inverted={falllbackInverted}
             width={size}
             height={size}
-            Svg={TestIcon}
+            Svg={BaseAvatarIcon}
         />
     );
 

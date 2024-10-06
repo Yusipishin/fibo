@@ -82,26 +82,58 @@
     "cart": [
         {
             "id": "1",
-            "list": [
-                {
-                    "count": 1,
-                    "price": 700,
-                    "dough": "Традиционное",
-                    "weight": "Маленькая",
-                    "name": "С креветками и трюфелями",
-                    "description": "Курица, Курица, Курица, Сырный бортик, Сливочная моцарелла",
-                    "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
-                },
-                {
-                    "count": 2,
-                    "price": 300,
-                    "dough": "Традиционное",
-                    "weight": "Маленькая",
-                    "name": "С креветками и трюфелями",
-                    "description": "Курица, Курица",
-                    "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
-                }
-            ]
+            "userId": "1",
+            "count": 1,
+            "price": 700,
+            "dough": "Традиционное",
+            "weight": "Маленькая",
+            "name": "С креветками и трюфелями",
+            "description": "Курица, Курица, Курица, Сырный бортик, Сливочная моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
+        },
+        {
+            "id": "2",
+            "userId": "1",
+            "count": 2,
+            "price": 300,
+            "dough": "Традиционное",
+            "weight": "Маленькая",
+            "name": "С креветками и трюфелями",
+            "description": "Курица, Курица",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
+        },
+        {
+            "id": "3",
+            "userId": "2",
+            "count": 1,
+            "price": 700,
+            "dough": "Традиционное",
+            "weight": "Маленькая",
+            "name": "С креветками и трюфелями",
+            "description": "Курица, Курица, Курица, Сырный бортик, Сливочная моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
+        },
+        {
+            "id": "4",
+            "userId": "2",
+            "count": 2,
+            "price": 300,
+            "dough": "Традиционное",
+            "weight": "Маленькая",
+            "name": "С креветками и трюфелями",
+            "description": "Курица, Курица",
+            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
+        },
+        {
+            "count": 1,
+            "price": 1077,
+            "dough": "Традиционное",
+            "weight": "Средняя",
+            "name": "Мясная с аджикой",
+            "description": ", острый соус аджика, моцарелла, фирменный томатный соус, баварские колбаски, острые колбаски чоризо, цыпленок, пикантная пепперони, Сырный бортик, Моцарелла",
+            "img": "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.jpg",
+            "userId": "1",
+            "id": "3EB3RTC"
         }
     ],
     "pizzas": [
@@ -447,7 +479,7 @@
             }
         },
         {
-            "name": "Острый перец халапеньо",
+            "name": "Острый халапеньо",
             "img": "https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png",
             "sale": {
                 "small": 69,

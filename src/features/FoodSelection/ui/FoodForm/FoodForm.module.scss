@@ -8,7 +8,11 @@
 }
 
 .wrapper {
+    height: 100%;
     max-width: 400px;
+    overflow-y: auto;
+    padding-bottom: 125px;
+    &::-webkit-scrollbar { width: 0; }
 }
 
 .portion {
@@ -19,9 +23,13 @@
 }
 
 .addBtn {
+    bottom: 0;
+    max-width: 400px;
     padding: 15px 0;
+    margin-bottom: 40px;
+    position: fixed;
 }
 
 .shadowTop {
-    box-shadow: 0 -50px 25px 5px var(--bg-color);
+    box-shadow: 0 -40px 20px 10px var(--bg-color);
 }

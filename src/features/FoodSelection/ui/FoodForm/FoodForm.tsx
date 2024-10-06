@@ -1,5 +1,6 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { Button } from '@/shared/ui/Button';
@@ -17,6 +18,8 @@ import { FoodFormInfo } from '../FoodFormInfo/FoodFormInfo';
 import { FoodFormIngredients } from '../FoodFormIngredients/FoodFormIngredients';
 import { FoodFormWeight } from '../FoodFormWeight/FoodFormWeight';
 import cls from './FoodForm.module.scss';
+import { useAddCartItem } from '@/entities/Cart';
+import { getUserAuthData } from '@/entities/User';
 
 export interface FoodFormProps {
     food: AllFoodProps;
@@ -26,13 +29,14 @@ export interface FoodFormProps {
 
 const FoodForm = memo((props: FoodFormProps) => {
     const { t } = useTranslation();
-    // const dispatch = useAppDispatch();
     const { className, food, isOpen } = props;
 
     const [price, setPrice] = useState(0);
     const [dough, setDough] = useState(PizzaDough.TRADITIONAL);
     const [weight, setWeight] = useState(PizzaWeight.AVERAGE);
     const [ingredients, setIngredients] = useState(['']);
+    const [addCartItemMutation] = useAddCartItem();
+    const userData = useSelector(getUserAuthData);
 
     useEffect(() => {
         if (isOpen) {
@@ -45,14 +49,31 @@ const FoodForm = memo((props: FoodFormProps) => {
         }
     }, [food.sale, isOpen]);
 
-    // const handleAddBtn = () => useCallback({
-    //     if (userInited) {
-
-    //     } else {
-    //         ...
-    //     }
-    //     // dispatch(cartActions.add())
-    // }, []);
+    const handleAddCartItem = useCallback(() => {
+        try {
+            addCartItemMutation({
+                count: 1,
+                price,
+                dough,
+                weight,
+                name: food.name,
+                description: ingredients.join(', '),
+                img: food.img,
+                userId: userData?.id ?? '',
+            });
+        } catch (e) {
+            console.log(e);
+        }
+    }, [
+        addCartItemMutation,
+        dough,
+        food.img,
+        food.name,
+        ingredients,
+        price,
+        userData?.id,
+        weight,
+    ]);
 
     return (
         <HStack className={classNames(cls.FoodForm, {}, [className])}>
@@ -75,8 +96,11 @@ const FoodForm = memo((props: FoodFormProps) => {
                             food={food}
                         />
                         <FoodFormWeight
+                            food={food}
                             weight={weight}
                             dough={dough}
+                            price={price}
+                            setPrice={setPrice}
                             setWeight={setWeight}
                         />
                         <FoodFormDough
@@ -88,6 +112,8 @@ const FoodForm = memo((props: FoodFormProps) => {
                             ingredients={ingredients}
                             setIngredients={setIngredients}
                             weight={weight}
+                            setPrice={setPrice}
+                            price={price}
                         />
                     </>
                 ) : (
@@ -104,7 +130,7 @@ const FoodForm = memo((props: FoodFormProps) => {
                 <Button
                     max
                     theme="accent"
-                    // onClick={handleAddBtn}
+                    onClick={handleAddCartItem}
                     className={classNames(cls.addBtn, {}, [
                         food.type === FoodType.PIZZA && cls.shadowTop,
                     ])}

@@ -76,7 +76,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
     return (
         <VStack
             gap="16"
-            max
             className={classNames(
                 cls.ProfileCard,
                 { [cls.editing]: !readonly },
@@ -84,7 +83,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
             )}
         >
             {data?.avatar && (
-                <HStack justify="center" max className={cls.avatarWrapper}>
+                <HStack justify="center" className={cls.avatarWrapper}>
                     <Avatar src={data?.avatar} />
                 </HStack>
             )}

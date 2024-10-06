@@ -8,10 +8,10 @@ import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import Logo from '@/shared/assets/img/logo.png';
 import { Skeleton } from '@/shared/ui/Skeleton';
 import { Text } from '@/shared/ui/Text';
-import { CartSidebarButton } from '@/features/Cart';
 import { getUserAuthData } from '@/entities/User';
 import { AuthModal } from '@/features/AuthByUsername';
 import { AvatarDropdown } from '@/features/avatarDropdown';
+import { CartSidebarButton } from '@/features/CartSidebarButton';
 
 interface HeaderBottomProps {
     scrolled?: boolean;

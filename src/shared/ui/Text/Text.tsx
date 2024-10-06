@@ -18,7 +18,7 @@ export enum TextSize {
 interface TextProps {
     className?: string;
     title?: { txt: string; tag: HeaderTagType };
-    text?: string;
+    text?: string | number;
     theme?: TextTheme;
     align?: TextAlign;
     size?: TextSize;

@@ -1,12 +1,15 @@
 import {
+    CSSProperties,
     ImgHTMLAttributes,
     memo,
     ReactElement,
     useLayoutEffect,
+    useMemo,
     useState,
 } from 'react';
 
 interface AppImageProps extends ImgHTMLAttributes<HTMLImageElement> {
+    size?: number;
     className?: string;
     fallback?: ReactElement;
     errorFallback?: ReactElement;
@@ -19,10 +22,19 @@ export const AppImage = memo((props: AppImageProps) => {
         alt = 'image',
         fallback,
         errorFallback,
+        size,
         ...otherProps
     } = props;
     const [isLoading, setIsLoading] = useState(true);
     const [hasError, setHasError] = useState(false);
+
+    const styles = useMemo<CSSProperties>(
+        () => ({
+            width: size,
+            height: size,
+        }),
+        [size],
+    );
 
     useLayoutEffect(() => {
         const img = new Image();
@@ -44,5 +56,13 @@ export const AppImage = memo((props: AppImageProps) => {
         return errorFallback;
     }
 
-    return <img className={className} src={src} alt={alt} {...otherProps} />;
+    return (
+        <img
+            className={className}
+            style={styles}
+            src={src}
+            alt={alt}
+            {...otherProps}
+        />
+    );
 });

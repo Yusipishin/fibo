@@ -4,7 +4,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './FoodFormAdditionalIngredients.module.scss';
 import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { Text, TextSize } from '@/shared/ui/Text';
-import { HStack } from '@/shared/ui/Stack';
+import { HStack, VStack } from '@/shared/ui/Stack';
 import {
     AdditionalIngredient,
     DoughWeight,
@@ -20,6 +20,8 @@ interface FoodFormAdditionalIngredientsProps {
     className?: string;
     ingredients: string[];
     setIngredients: (list: string[]) => void;
+    setPrice: (price: number) => void;
+    price: number;
 }
 
 const getSkeletons = () =>
@@ -30,7 +32,14 @@ const getSkeletons = () =>
 export const FoodFormAdditionalIngredients = memo(
     (props: FoodFormAdditionalIngredientsProps) => {
         const { t } = useTranslation();
-        const { className, weight, setIngredients, ingredients } = props;
+        const {
+            className,
+            weight,
+            setIngredients,
+            ingredients,
+            setPrice,
+            price,
+        } = props;
         const {
             data: ingredientList,
             isLoading,
@@ -38,11 +47,16 @@ export const FoodFormAdditionalIngredients = memo(
         } = useGetList<AdditionalIngredient, string>('additional-ingredients');
         const weighthEn = mapPizzaWeight[weight] as keyof DoughWeight;
 
-        const handleClick = (ingr: string) => () => {
-            const newIngredients = ingredients.includes(ingr)
-                ? ingredients.filter((item) => item !== ingr)
-                : [...ingredients, ingr];
-            setIngredients(newIngredients);
+        const handleClick = (ingr: AdditionalIngredient) => () => {
+            if (ingredients.includes(ingr.name)) {
+                setIngredients(
+                    ingredients.filter((item) => item !== ingr.name),
+                );
+                setPrice(price - ingr.sale[weighthEn]);
+            } else {
+                setIngredients([...ingredients, ingr.name]);
+                setPrice(price + ingr.sale[weighthEn]);
+            }
         };
 
         if (isError) {
@@ -63,10 +77,9 @@ export const FoodFormAdditionalIngredients = memo(
                 max
                 wrap
                 gap="8"
+                align="stretch"
                 justify="between"
-                className={classNames(cls.FoodFormAdditionalIngredients, {}, [
-                    className,
-                ])}
+                className={classNames('', {}, [className])}
             >
                 {ingredientList?.map((ingr) => {
                     if (!ingr?.sale[weighthEn]) return null;
@@ -75,23 +88,31 @@ export const FoodFormAdditionalIngredients = memo(
                         <Button
                             key={ingr.img}
                             theme="outline"
-                            onClick={handleClick(ingr.name)}
+                            onClick={handleClick(ingr)}
                             className={classNames(cls.addIngr, {
                                 [cls.selected]: ingredients.includes(ingr.name),
                             })}
                         >
-                            <AppImage className={cls.ingrImg} src={ingr.img} />
-                            <Text
-                                align="center"
-                                size={TextSize.S}
-                                text={ingr.name}
-                            />
-                            <Text
-                                theme="accent"
-                                align="center"
-                                size={TextSize.S}
-                                text={`${ingr?.sale[weighthEn]} ₽`}
-                            />
+                            <VStack gap="4" align="center" justify="center" max>
+                                <AppImage
+                                    className={cls.ingrImg}
+                                    src={ingr.img}
+                                />
+                                <Text
+                                    align="center"
+                                    size={TextSize.XS}
+                                    text={ingr.name}
+                                    className={cls.ingrName}
+                                />
+                            </VStack>
+                            <VStack align="center" max>
+                                <Text
+                                    theme="accent"
+                                    align="center"
+                                    size={TextSize.S}
+                                    text={`${ingr?.sale[weighthEn]} ₽`}
+                                />
+                            </VStack>
                         </Button>
                     );
                 })}

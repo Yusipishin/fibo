@@ -34,7 +34,6 @@ export const EditableProfileCardHeader = memo(
 
         return (
             <HStack
-                max
                 justify="between"
                 className={classNames('', {}, [className])}
             >

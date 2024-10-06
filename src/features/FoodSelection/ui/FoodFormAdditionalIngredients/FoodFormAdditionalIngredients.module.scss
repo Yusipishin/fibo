@@ -1,13 +1,9 @@
-.FoodFormAdditionalIngredients {
-    max-height: 300px;
-    overflow-y: auto;
-    padding-bottom: 40px;
-
-    &::-webkit-scrollbar { width: 0; }
-}
-
 .addIngr {
-    max-width: 110px;
+    gap: 8px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .selected {
@@ -15,6 +11,10 @@
 }
 
 .ingrImg {
-    max-height: 65px;
-    max-width: 80px;
+    max-height: 75px;
+    max-width: 90px;
+}
+
+.ingrName {
+    font-weight: 600;
 }
