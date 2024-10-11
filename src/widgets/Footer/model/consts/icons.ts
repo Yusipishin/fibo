@@ -16,10 +16,10 @@ export const paymentIcons: FC<SVGProps<SVGSVGElement>>[] = [
 ];
 
 export const messengersIcons: FC<SVGProps<SVGSVGElement>>[] = [
-    FacebookIcon,
-    FacebookMessengerIcon,
-    SkypeIcon,
-    TelegramIcon,
     ViberIcon,
+    SkypeIcon,
+    FacebookMessengerIcon,
+    TelegramIcon,
+    FacebookIcon,
     VkIcon,
 ];

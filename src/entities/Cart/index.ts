@@ -1,4 +1,4 @@
-export type { Cart, CartItem } from './model/types/cart';
+export type { CartItem } from './model/types/cart';
 export {
     useAddCartItem,
     useDeleteCartItem,

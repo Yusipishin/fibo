@@ -1,6 +1,4 @@
 import { StateSchema } from '@/app/providers/StoreProvider';
-import { Country } from '@/entities/Country';
-import { Currency } from '@/entities/Currency';
 import { getProfileForm } from './getProfileForm';
 
 describe('getProfileForm.test', () => {
@@ -8,11 +6,11 @@ describe('getProfileForm.test', () => {
         const data = {
             username: 'admin',
             age: 22,
-            country: Country.Armenia,
+            country: '',
             lastname: 'Yus',
             first: 'Al',
             city: 'Ukhta',
-            currency: Currency.USD,
+            currency: '',
         };
         const state: DeepPartial<StateSchema> = {
             profile: {
