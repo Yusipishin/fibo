@@ -23,7 +23,7 @@ export const FoodModal = (props: FoodModalProps) => {
             className={classNames('', {}, [className])}
         >
             <Suspense fallback={<Loader />}>
-                <FoodFormAsync isOpen={isOpen} food={food} />
+                <FoodFormAsync onClose={onClose} isOpen={isOpen} food={food} />
             </Suspense>
         </Modal>
     );

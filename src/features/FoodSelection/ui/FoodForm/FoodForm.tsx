@@ -18,25 +18,29 @@ import { FoodFormInfo } from '../FoodFormInfo/FoodFormInfo';
 import { FoodFormIngredients } from '../FoodFormIngredients/FoodFormIngredients';
 import { FoodFormWeight } from '../FoodFormWeight/FoodFormWeight';
 import cls from './FoodForm.module.scss';
-import { useAddCartItem } from '@/entities/Cart';
+import { useAddCartItem, useGetCartItems } from '@/entities/Cart';
 import { getUserAuthData } from '@/entities/User';
 
 export interface FoodFormProps {
     food: AllFoodProps;
     className?: string;
     isOpen: boolean;
+    onClose: () => void;
 }
 
 const FoodForm = memo((props: FoodFormProps) => {
     const { t } = useTranslation();
-    const { className, food, isOpen } = props;
+    const { className, food, isOpen, onClose } = props;
 
     const [price, setPrice] = useState(0);
     const [dough, setDough] = useState(PizzaDough.TRADITIONAL);
     const [weight, setWeight] = useState(PizzaWeight.AVERAGE);
     const [ingredients, setIngredients] = useState(['']);
-    const [addCartItemMutation] = useAddCartItem();
+    const [addCartItemMutation, { isLoading: isAdding }] = useAddCartItem();
     const userData = useSelector(getUserAuthData);
+    const { refetch: refetchCartItems } = useGetCartItems({
+        userId: userData?.id ?? '',
+    });
 
     useEffect(() => {
         if (isOpen) {
@@ -60,7 +64,9 @@ const FoodForm = memo((props: FoodFormProps) => {
                 description: ingredients.join(', '),
                 img: food.img,
                 userId: userData?.id ?? '',
-            });
+            })
+                .then(() => refetchCartItems())
+                .then(() => onClose());
         } catch (e) {
             console.log(e);
         }
@@ -70,7 +76,9 @@ const FoodForm = memo((props: FoodFormProps) => {
         food.img,
         food.name,
         ingredients,
+        onClose,
         price,
+        refetchCartItems,
         userData?.id,
         weight,
     ]);
@@ -130,6 +138,7 @@ const FoodForm = memo((props: FoodFormProps) => {
                 <Button
                     max
                     theme="accent"
+                    disabled={isAdding}
                     onClick={handleAddCartItem}
                     className={classNames(cls.addBtn, {}, [
                         food.type === FoodType.PIZZA && cls.shadowTop,

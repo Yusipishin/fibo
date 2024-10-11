@@ -9,6 +9,11 @@ interface AddCartItemArg extends CartItem {
     userId: string;
 }
 
+interface DeleteCartItemArg {
+    id: string;
+    userId: string;
+}
+
 const cartApi = rtkApi.injectEndpoints({
     endpoints: (build) => ({
         getCartItems: build.query<CartItem[], GetCartItemsArg>({
@@ -26,13 +31,12 @@ const cartApi = rtkApi.injectEndpoints({
                 body: item,
             }),
         }),
-        deleteCartItem: build.mutation<void, { userId: string; id: string }>({
+        deleteCartItem: build.mutation<void, DeleteCartItemArg>({
             query: ({ userId, id }) => ({
-                url: `/cart/`,
+                url: `/cart/${id}`,
                 method: 'DELETE',
                 params: {
                     userId,
-                    id,
                 },
             }),
         }),

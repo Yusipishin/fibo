@@ -26,8 +26,6 @@ export const CartSidebarButton = memo((props: CartSidebarButtonProps) => {
         userId: userData?.id ?? '',
     });
 
-    console.log(cartSidebarList);
-
     const onClose = useCallback(() => {
         setIsOpen(false);
     }, []);
@@ -40,7 +38,8 @@ export const CartSidebarButton = memo((props: CartSidebarButtonProps) => {
         () =>
             cartSidebarList?.map((item) => (
                 <CartSidebarItem
-                    key={item.img}
+                    id={item.id}
+                    key={item.id}
                     img={item.img}
                     title={item.name}
                     count={item.count}
