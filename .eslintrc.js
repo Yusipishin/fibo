@@ -63,6 +63,7 @@ module.exports = {
                     'size',
                     'radius',
                     'Tag',
+                    'effect',
                 ],
             },
         ],

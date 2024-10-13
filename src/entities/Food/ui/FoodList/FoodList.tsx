@@ -1,12 +1,14 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Skeleton } from '@/shared/ui/Skeleton';
 import { HStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
 import { FoodAllProps } from '../../model/types/food';
 import FoodItem from '../FoodItem/FoodItem';
 import cls from './FoodList.module.scss';
+import SkeletonIcon from '@/shared/assets/img/icons/skeleton-food-ic.svg';
+import { Icon } from '@/shared/ui/Icon';
+import { Skeleton } from '@/shared/ui/Skeleton';
 
 interface FoodListProps {
     title: string;
@@ -18,9 +20,22 @@ interface FoodListProps {
 }
 
 const getSkeletons = () =>
-    new Array(6)
-        .fill(0)
-        .map((_, i) => <Skeleton key={i} width={250} height={360} />);
+    new Array(6).fill(0).map((_, i) => (
+        <div key={i}>
+            <Icon Svg={SkeletonIcon} />
+            <Skeleton marginTop={15} width={250} height={30} />
+            <Skeleton
+                marginTop={15}
+                marginBottom={25}
+                width={250}
+                height={80}
+            />
+            <HStack justify="between">
+                <Skeleton width={100} height={20} />
+                <Skeleton width={120} height={30} />
+            </HStack>
+        </div>
+    ));
 
 export const FoodList = memo((props: FoodListProps) => {
     const { t } = useTranslation();

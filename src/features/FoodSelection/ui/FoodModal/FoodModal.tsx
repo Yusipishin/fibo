@@ -3,11 +3,11 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Modal } from '@/shared/ui/Modal';
 import { Loader } from '@/shared/ui/Loader';
 import { FoodFormAsync } from '../FoodForm/FoodForm.async';
-import { AllFoodProps } from '@/entities/Food';
+import { FoodAllProps } from '@/entities/Food';
 
 interface FoodModalProps {
     className?: string;
-    food: AllFoodProps;
+    food: FoodAllProps;
     isOpen: boolean;
     onClose: () => void;
 }

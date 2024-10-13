@@ -14,6 +14,8 @@ import { Button } from '@/shared/ui/Button';
 import { mapPizzaWeight } from '../FoodFormInfo/FoodFormInfo';
 import { useGetList } from '@/shared/lib/hooks/useGetList/useGetList';
 import { Skeleton } from '@/shared/ui/Skeleton';
+import SkeletonIcon from '@/shared/assets/img/icons/skeleton-food-ic.svg';
+import { Icon } from '@/shared/ui/Icon';
 
 interface FoodFormAdditionalIngredientsProps {
     weight: PizzaWeight;
@@ -23,11 +25,14 @@ interface FoodFormAdditionalIngredientsProps {
     setPrice: (price: number) => void;
     price: number;
 }
-
 const getSkeletons = () =>
-    new Array(6)
-        .fill(0)
-        .map((_, i) => <Skeleton key={i} height={150} width={110} />);
+    new Array(6).fill(0).map((_, i) => (
+        <div key={i}>
+            <Icon className={cls.ingrImg} Svg={SkeletonIcon} />
+            <Skeleton marginTop={5} marginBottom={10} width={100} height={20} />
+            <Skeleton width={50} height={22} />
+        </div>
+    ));
 
 export const FoodFormAdditionalIngredients = memo(
     (props: FoodFormAdditionalIngredientsProps) => {

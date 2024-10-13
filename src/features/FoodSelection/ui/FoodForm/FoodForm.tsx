@@ -7,7 +7,7 @@ import { Button } from '@/shared/ui/Button';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
 import {
-    AllFoodProps,
+    FoodAllProps,
     FoodType,
     PizzaDough,
     PizzaWeight,
@@ -22,7 +22,7 @@ import { useAddCartItem, useGetCartItems } from '@/entities/Cart';
 import { getUserAuthData } from '@/entities/User';
 
 export interface FoodFormProps {
-    food: AllFoodProps;
+    food: FoodAllProps;
     className?: string;
     isOpen: boolean;
     onClose: () => void;
@@ -138,6 +138,7 @@ const FoodForm = memo((props: FoodFormProps) => {
                 <Button
                     max
                     theme="accent"
+                    effect="scaleEffect"
                     disabled={isAdding}
                     onClick={handleAddCartItem}
                     className={classNames(cls.addBtn, {}, [

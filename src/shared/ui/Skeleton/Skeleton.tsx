@@ -6,15 +6,26 @@ interface SkeletonProps {
     className?: string;
     height?: string | number;
     width?: string | number;
+    marginTop?: string | number;
+    marginBottom?: string | number;
     border?: string;
 }
 
 export const Skeleton = (props: SkeletonProps) => {
-    const { className, height, width, border } = props;
+    const {
+        className,
+        height,
+        width,
+        border = 10,
+        marginTop,
+        marginBottom,
+    } = props;
 
     const styles: CSSProperties = {
         width,
         height,
+        marginTop,
+        marginBottom,
         borderRadius: border,
     };
 

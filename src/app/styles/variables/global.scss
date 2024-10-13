@@ -24,7 +24,7 @@
     // L
     --font-size-l: 24px;
     --font-line-l: 32px;
-    --font-l: 700 var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    --font-l: 800 var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
     // XL
     --font-size-xl: 32px;
@@ -48,9 +48,10 @@
     // z - index
     --text-z-index: 1;
     --header-z-index: 5;
-    --modal-z-index: 10;
-    --popup-z-index: 9999;
-    --switchers-z-index: 99999;
+    --modal-z-index: 99;
+    --popup-z-index: 999;
+    --switchers-z-index: 9999;
+    --sidebar-z-index: 99999;
 
     // opacity
     --opacity-half: 0.5;

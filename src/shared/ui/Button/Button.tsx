@@ -5,6 +5,7 @@ import cls from './Button.module.scss';
 type ButtonTheme = 'clear' | 'inverted' | 'accent' | 'outline';
 type ButtonRadius = 'halfRadius' | 'xsRadius';
 type ButtonSize = 'size_xs' | 'size_s' | 'size_m' | 'size_l' | 'size_xl';
+type ButtonEffect = 'opacityEffect' | 'scaleEffect';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
@@ -36,6 +37,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
      * Округляет кнопку
      */
     radius?: ButtonRadius;
+    /**
+     * Задаёт эффект при наведении на кнопку
+     */
+    effect?: ButtonEffect;
 }
 
 export const Button = memo((props: ButtonProps) => {
@@ -48,6 +53,7 @@ export const Button = memo((props: ButtonProps) => {
         radius = 'xsRadius',
         disabled,
         max,
+        effect = 'opacityEffect',
         ...otherProps
     } = props;
 
@@ -66,6 +72,7 @@ export const Button = memo((props: ButtonProps) => {
                 cls[theme],
                 cls[size],
                 cls[radius],
+                cls[effect],
             ])}
             {...otherProps}
         >

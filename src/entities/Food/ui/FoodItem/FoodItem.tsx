@@ -30,8 +30,13 @@ function FoodItem({ className, food, onShowModal }: FoodItemProps) {
         >
             <VStack>
                 <AppImage className={cls.img} src={food.img} />
-                <Text size={TextSize.L} title={{ txt: food.name, tag: 'h3' }} />
                 <Text
+                    theme="secondary"
+                    size={TextSize.L}
+                    title={{ txt: food.name, tag: 'h3' }}
+                />
+                <Text
+                    theme="secondary"
                     size={TextSize.S}
                     text={
                         food.description ??

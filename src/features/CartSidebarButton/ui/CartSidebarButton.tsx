@@ -3,11 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { BrowserView } from 'react-device-detect';
 import { useSelector } from 'react-redux';
 import { Button } from '@/shared/ui/Button';
-import { HStack } from '@/shared/ui/Stack';
-import { Text } from '@/shared/ui/Text';
+import { HStack, VStack } from '@/shared/ui/Stack';
+import { Text, TextSize } from '@/shared/ui/Text';
 import { Sidebar } from '@/shared/ui/Sidebar/Sidebar';
 import { CartSidebarItem, useGetCartItems } from '@/entities/Cart';
 import { getUserAuthData } from '@/entities/User';
+import { AppImage } from '@/shared/ui/AppImage/AppImage';
+import girlImg from '@/shared/assets/img/bg/girl-bg.png';
+import cls from './CartSidebarButton.module.scss';
 
 interface CartSidebarButtonProps {
     className?: string;
@@ -18,11 +21,7 @@ export const CartSidebarButton = memo((props: CartSidebarButtonProps) => {
     const { className } = props;
     const [isOpen, setIsOpen] = useState(false);
     const userData = useSelector(getUserAuthData);
-    const {
-        data: cartSidebarList,
-        isLoading,
-        isError,
-    } = useGetCartItems({
+    const { data: cartSidebarList } = useGetCartItems({
         userId: userData?.id ?? '',
     });
 
@@ -34,21 +33,36 @@ export const CartSidebarButton = memo((props: CartSidebarButtonProps) => {
         setIsOpen(true);
     }, []);
 
-    const itemsList = useMemo(
-        () =>
-            cartSidebarList?.map((item) => (
-                <CartSidebarItem
-                    id={item.id}
-                    key={item.id}
-                    img={item.img}
-                    title={item.name}
-                    count={item.count}
-                    price={item.price}
-                    description={item.description}
+    const itemsList = useMemo(() => {
+        if (cartSidebarList?.length) {
+            return (
+                <VStack max>
+                    {cartSidebarList?.map((item) => (
+                        <CartSidebarItem
+                            id={item.id}
+                            key={item.id}
+                            img={item.img}
+                            title={item.name}
+                            count={item.count}
+                            price={item.price}
+                            description={item.description}
+                        />
+                    ))}
+                </VStack>
+            );
+        }
+        return (
+            <VStack className={cls.empty} justify="center" align="center">
+                <AppImage src={girlImg} />
+                <Text size={TextSize.ML} text={t('Ой, пусто!')} />
+                <Text
+                    text={t(
+                        'Ваша корзина пуста, откройте меню и выберите понравившийся товар.',
+                    )}
                 />
-            )),
-        [cartSidebarList],
-    );
+            </VStack>
+        );
+    }, [cartSidebarList, t]);
 
     const trigger = (
         <Button onClick={onShow} theme="accent">

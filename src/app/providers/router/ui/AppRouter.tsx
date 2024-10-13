@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { routeConfig } from '../config/routeConfig';
 import { RequireAuth } from './RequireAuth';
 import { AppRoutesProps } from '@/shared/types/router';
-import { PageLoader } from '@/widgets/PageLoader';
+import { Loader } from '@/shared/ui/Loader';
 
 const AppRouter = () => {
     const renderWithWrapper = useCallback(
@@ -26,7 +26,7 @@ const AppRouter = () => {
     );
 
     return (
-        <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<Loader />}>
             <Routes>{Object.values(routeConfig).map(renderWithWrapper)}</Routes>
         </Suspense>
     );

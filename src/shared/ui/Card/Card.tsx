@@ -14,7 +14,7 @@ interface CardProps extends ButtonHTMLAttributes<HTMLDivElement> {
 }
 
 export const Card = memo((props: CardProps) => {
-    const { max, className, children, theme, ...otherProps } = props;
+    const { max = true, className, children, theme, ...otherProps } = props;
 
     return (
         <div

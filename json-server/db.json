@@ -79,30 +79,7 @@
             "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgA_xdu7bbkn44ysPIKt7scHEXEqsiIMUWQ&s"
         }
     ],
-    "cart": [
-        {
-            "id": "1",
-            "userId": "1",
-            "count": 1,
-            "price": 700,
-            "dough": "Традиционное",
-            "weight": "Маленькая",
-            "name": "С креветками и трюфелями",
-            "description": "Курица, Курица, Курица, Сырный бортик, Сливочная моцарелла",
-            "img": "https://cdn.dodostatic.net/static/Img/Products/11eefb595a197c24ba932a0ad1144afb_1875x1875.jpeg"
-        },
-        {
-            "count": 1,
-            "price": 559,
-            "dough": "Традиционное",
-            "weight": "Средняя",
-            "name": "Сырная",
-            "description": ", моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
-            "img": "https://media.dodostatic.net/image/r:292x292/11EE7D610D2925109AB2E1C92CC5383C.jpg",
-            "userId": "1",
-            "id": "9Gqb7jg"
-        }
-    ],
+    "cart": [],
     "pizzas": [
         {
             "id": "1",

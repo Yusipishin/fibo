@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { AllFoodProps, FoodList, FoodPath } from '@/entities/Food';
+import { FoodAllProps, FoodList, FoodPath } from '@/entities/Food';
 import { useGetList } from '@/shared/lib/hooks/useGetList/useGetList';
 import { Container } from '@/shared/ui/Container';
 
@@ -7,7 +7,7 @@ interface FoodInfiniteListProps {
     title: string;
     endpoint: FoodPath;
     className?: string;
-    onShowModal?: (food: AllFoodProps) => void;
+    onShowModal?: (food: FoodAllProps) => void;
 }
 
 export const FoodInfiniteList = memo((props: FoodInfiniteListProps) => {
@@ -16,7 +16,7 @@ export const FoodInfiniteList = memo((props: FoodInfiniteListProps) => {
         data: foods,
         isError,
         isLoading,
-    } = useGetList<AllFoodProps, FoodPath>(endpoint);
+    } = useGetList<FoodAllProps, FoodPath>(endpoint);
 
     return (
         <Container>
