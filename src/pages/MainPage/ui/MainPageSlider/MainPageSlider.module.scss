@@ -1,4 +1,10 @@
 .sideImg {
     opacity: var(--opacity-half);
-    transform: scale(0.9);
+    transform: scale(0.95);
+}
+
+.sideLink {
+    opacity: 1;
+    cursor: default;
+    pointer-events: none;
 }

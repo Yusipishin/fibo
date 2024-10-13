@@ -4,14 +4,15 @@
         position: relative;
 
         &-slide img {
+            width: 540px;
+            height: 312px;
             transition: all 0.3s;
-            border-radius: var(--border-primary-radius);
+            border-radius: var(--border-m-radius);
         }
     }
 }
 
 .swiper-slide {
-    height: 312px;
     overflow: hidden;
 }
 

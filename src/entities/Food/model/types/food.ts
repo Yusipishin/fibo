@@ -63,4 +63,4 @@ export interface Dessert extends Drink {
     weight: number;
 }
 
-export type AllFoodProps = Pizza & Snack & Drink & Dessert;
+export type FoodAllProps = Pizza & Snack & Drink & Dessert;

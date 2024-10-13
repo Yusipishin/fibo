@@ -5,13 +5,13 @@ import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { Button } from '@/shared/ui/Button';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
-import { AllFoodProps } from '../../model/types/food';
+import { FoodAllProps } from '../../model/types/food';
 import cls from './FoodItem.module.scss';
 
 interface FoodItemProps {
-    food: AllFoodProps;
+    food: FoodAllProps;
     className?: string;
-    onShowModal?: (food: AllFoodProps) => void;
+    onShowModal?: (food: FoodAllProps) => void;
 }
 
 function FoodItem({ className, food, onShowModal }: FoodItemProps) {

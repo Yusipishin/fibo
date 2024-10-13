@@ -1,20 +1,20 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { Skeleton } from '@/shared/ui/Skeleton';
 import { HStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
-import { AllFoodProps } from '../../model/types/food';
+import { FoodAllProps } from '../../model/types/food';
 import FoodItem from '../FoodItem/FoodItem';
 import cls from './FoodList.module.scss';
-import { Skeleton } from '@/shared/ui/Skeleton';
 
 interface FoodListProps {
     title: string;
     isError?: boolean;
     isLoading?: boolean;
     className?: string;
-    foods: AllFoodProps[];
-    onShowModal?: (food: AllFoodProps) => void;
+    foods: FoodAllProps[];
+    onShowModal?: (food: FoodAllProps) => void;
 }
 
 const getSkeletons = () =>

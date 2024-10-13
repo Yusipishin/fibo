@@ -2,7 +2,7 @@ export { FoodPath, FoodType } from './model/consts/food';
 export { PizzaDough, PizzaWeight } from './model/consts/pizza';
 export type {
     AdditionalIngredient,
-    AllFoodProps,
+    FoodAllProps,
     Dessert,
     DoughWeight,
     Drink,
