@@ -24,7 +24,7 @@ export const MainPageSlider = memo(() => (
                     {({ isActive, isNext }) => {
                         const isSide = !isNext && !isActive;
                         return (
-                            <AppLink className={isSide && cls.sideImg} to={to}>
+                            <AppLink className={isSide && cls.sideLink} to={to}>
                                 <AppImage
                                     alt={alt}
                                     src={src}
