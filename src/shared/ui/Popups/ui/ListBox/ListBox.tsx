@@ -1,9 +1,4 @@
-import {
-    Listbox as HListBox,
-    ListboxButton,
-    ListboxOption,
-    ListboxOptions,
-} from '@headlessui/react';
+import { Listbox as HListBox } from '@headlessui/react';
 import { Fragment, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
@@ -57,27 +52,27 @@ export function ListBox(props: ListBoxProps) {
                 value={value}
                 onChange={onChange}
             >
-                <ListboxButton
+                <HListBox.Button
                     as={Button}
-                    disabled={readonly}
+                    aria-disabled={readonly}
                     className={cls.trigger}
                 >
                     {value ?? defaultValue}
-                </ListboxButton>
-                <ListboxOptions
+                </HListBox.Button>
+                <HListBox.Options
                     className={classNames(cls.options, {}, optionsClasses)}
                 >
                     {items?.map((item) => (
-                        <ListboxOption
+                        <HListBox.Option
                             as={Fragment}
                             key={item.value}
                             value={item.value}
                             disabled={item.disabled}
                         >
-                            {({ focus, selected }) => (
+                            {({ active, selected }) => (
                                 <li
                                     className={classNames(cls.item, {
-                                        [popupCls.active]: focus,
+                                        [popupCls.active]: active,
                                         [popupCls.disabled]: item.disabled,
                                     })}
                                 >
@@ -85,9 +80,9 @@ export function ListBox(props: ListBoxProps) {
                                     {item.content}
                                 </li>
                             )}
-                        </ListboxOption>
+                        </HListBox.Option>
                     ))}
-                </ListboxOptions>
+                </HListBox.Options>
             </HListBox>
         </HStack>
     );

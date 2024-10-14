@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { FoodInfiniteList, FoodModal } from '@/features/FoodSelection';
 import { foodLists } from '../../model/consts/food';
-import { AllFoodProps } from '@/entities/Food';
+import { FoodAllProps } from '@/entities/Food';
 
 interface MainPageListsProps {
     className?: string;
@@ -21,7 +21,7 @@ export const MainPageLists = memo((props: MainPageListsProps) => {
     }, []);
 
     const onShowModal = useCallback(
-        (food: AllFoodProps) => {
+        (food: FoodAllProps) => {
             setIsFoodModal(true);
             setFood(food);
         },
@@ -39,7 +39,7 @@ export const MainPageLists = memo((props: MainPageListsProps) => {
                 />
             ))}
             <FoodModal
-                food={food as AllFoodProps}
+                food={food as FoodAllProps}
                 isOpen={isFoodModal}
                 onClose={onCloseModal}
             />

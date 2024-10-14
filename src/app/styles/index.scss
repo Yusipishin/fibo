@@ -5,6 +5,10 @@
 @import "themes/light";
 @import "themes/dark";
 
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     overflow-x: hidden;
     font: var(--font-m);
