@@ -2,8 +2,7 @@ import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { FoodInfiniteList, FoodModal } from '@/features/FoodSelection';
-import { foodLists } from '../../model/consts/food';
-import { FoodAllProps } from '@/entities/Food';
+import { FoodAllProps, foodListLinks } from '@/entities/Food';
 
 interface MainPageListsProps {
     className?: string;
@@ -30,11 +29,12 @@ export const MainPageLists = memo((props: MainPageListsProps) => {
 
     return (
         <div className={classNames('', {}, [className])}>
-            {foodLists?.map((food) => (
+            {foodListLinks?.map((food) => (
                 <FoodInfiniteList
+                    anchorRef={food.ref}
                     key={food.path}
-                    title={t(food.title)}
                     endpoint={food.path}
+                    title={t(food.title)}
                     onShowModal={onShowModal}
                 />
             ))}

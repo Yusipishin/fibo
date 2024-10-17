@@ -1,4 +1,9 @@
-export { FoodPath, FoodType } from './model/consts/food';
+export {
+    FoodPath,
+    FoodType,
+    foodListLinks,
+    foodPageLinks,
+} from './model/consts/food';
 export { PizzaDough, PizzaWeight } from './model/consts/pizza';
 export type {
     AdditionalIngredient,

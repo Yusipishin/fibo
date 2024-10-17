@@ -1,17 +1,18 @@
-import { memo } from 'react';
+import { memo, RefObject } from 'react';
 import { FoodAllProps, FoodList, FoodPath } from '@/entities/Food';
 import { useGetList } from '@/shared/lib/hooks/useGetList/useGetList';
 import { Container } from '@/shared/ui/Container';
 
 interface FoodInfiniteListProps {
     title: string;
-    endpoint: FoodPath;
     className?: string;
+    endpoint: FoodPath;
+    anchorRef: RefObject<HTMLDivElement>;
     onShowModal?: (food: FoodAllProps) => void;
 }
 
 export const FoodInfiniteList = memo((props: FoodInfiniteListProps) => {
-    const { className, endpoint, title, onShowModal } = props;
+    const { className, endpoint, title, onShowModal, anchorRef } = props;
     const {
         data: foods,
         isError,
@@ -19,7 +20,7 @@ export const FoodInfiniteList = memo((props: FoodInfiniteListProps) => {
     } = useGetList<FoodAllProps, FoodPath>(endpoint);
 
     return (
-        <Container>
+        <Container anchorRef={anchorRef} id={endpoint}>
             <FoodList
                 foods={foods}
                 title={title}

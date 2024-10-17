@@ -12,6 +12,7 @@ import { Skeleton } from '@/shared/ui/Skeleton';
 import { Icon } from '@/shared/ui/Icon';
 import cls from './HeaderTop.module.scss';
 import { PHONE_NUMBER } from '@/shared/const/telephone';
+import { getRouteMain } from '@/shared/const/router';
 
 interface HeaderTopProps {
     className?: string;
@@ -24,9 +25,9 @@ export const HeaderTop = memo((props: HeaderTopProps) => {
     const { className } = props;
 
     return (
-        <HStack max justify="between">
+        <HStack className={className} max justify="between">
             <HStack gap="64">
-                <AppLink to="/">
+                <AppLink to={getRouteMain()}>
                     <AppImage
                         src={Logo}
                         alt={t('Логотип сайта Fibo')}
